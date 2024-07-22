@@ -1,0 +1,114 @@
+[15:13:23] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[15:13:32] [ServerMain/INFO]: Loaded 1175 recipes
+[15:13:32] [ServerMain/INFO]: Loaded 1276 advancements
+[15:13:33] [Server thread/INFO]: Starting minecraft server version 1.20.6
+[15:13:33] [Server thread/INFO]: Loading properties
+[15:13:33] [Server thread/INFO]: This server is running Paper version 1.20.6-148-ver/1.20.6@20f5165 (2024-07-02T15:37:33Z) (Implementing API version 1.20.6-R0.1-SNAPSHOT)
+[15:13:36] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[15:13:36] [Server thread/INFO]: Using 4 threads for Netty based IO
+[15:13:38] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[15:13:38] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 2 worker threads, and gen parallelism of 2 threads
+[15:13:39] [Server thread/INFO]: Default game type: SURVIVAL
+[15:13:39] [Server thread/INFO]: Generating keypair
+[15:13:39] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:13:39] [Server thread/INFO]: Using default channel type
+[15:13:39] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[15:13:39] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[15:13:40] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.3+6788-6359df8
+[15:13:47] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@663d6752]
+[15:13:47] [Server thread/INFO]: [testPlugin] Loading server plugin testPlugin v1.0-SNAPSHOT
+[15:13:47] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[15:13:47] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.3+6788-6359df8
+[15:13:47] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[15:13:48] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[15:13:51] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R4.PaperweightAdapter as the Bukkit adapter
+[15:13:56] [Server thread/INFO]: Preparing level "world"
+[15:14:00] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[15:14:05] [Server thread/INFO]: Time elapsed: 5118 ms
+[15:14:05] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[15:14:05] [Server thread/INFO]: Time elapsed: 756 ms
+[15:14:05] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[15:14:06] [Server thread/INFO]: Time elapsed: 497 ms
+[15:14:06] [Server thread/INFO]: [testPlugin] Enabling testPlugin v1.0-SNAPSHOT
+[15:14:07] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Commands' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[15:14:07] [Server thread/INFO]: [testPlugin] [ACF] Enabled Asynchronous Tab Completion Support!
+[15:14:07] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[15:14:07] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[15:14:07] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[15:14:08] [Server thread/INFO]: Running delayed init tasks
+[15:14:08] [Server thread/INFO]: Done (34.876s)! For help, type "help"
+[15:14:08] [Server thread/INFO]: Timings Reset
+[15:14:23] [User Authenticator #0/INFO]: UUID of player legoshie is 892068f6-4d8d-41ff-bac4-33a8920862ef
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] Can't read players locale, you will be unable to automatically detect players language. Only Bukkit 1.7+ is supported for this.
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] java.lang.NoSuchFieldException: locale
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.reflectionrewriter.runtime.AbstractDefaultRulesReflectionProxy.getDeclaredField(AbstractDefaultRulesReflectionProxy.java:90)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.pluginremap.reflect.PaperReflectionHolder.getDeclaredField(Unknown Source)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at testPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.readPlayerLocale(BukkitCommandManager.java:317)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at testPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.ACFBukkitListener.onPlayerJoin(ACFBukkitListener.java:57)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at com.destroystokyo.paper.event.executor.MethodHandleEventExecutor.execute(MethodHandleEventExecutor.java:40)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:81)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.players.PlayerList.placeNewPlayer(PlayerList.java:347)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.network.ServerConfigurationPacketListenerImpl.handleConfigurationFinished(ServerConfigurationPacketListenerImpl.java:153)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:22)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:13)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:55)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.TickTask.run(TickTask.java:18)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:151)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1511)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:195)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:125)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1488)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1411)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:135)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1377)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1238)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[15:14:25] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[15:14:25] [Server thread/INFO]: legoshie joined the game
+[15:14:25] [Server thread/INFO]: legoshie[/127.0.0.1:49616] logged in with entity id 68 at ([world]23.30375577868824, 137.75105992236172, 1.3245553576179465)
+[15:14:30] [Server thread/INFO]: legoshie issued server command: /help /curar
+[15:14:32] [Server thread/INFO]: legoshie issued server command: /curar help
+[15:14:33] [Server thread/INFO]: legoshie issued server command: /help curar
+[15:57:29] [User Authenticator #1/INFO]: UUID of player legoshie is 892068f6-4d8d-41ff-bac4-33a8920862ef
+[15:57:29] [Server thread/INFO]: legoshie lost connection: You logged in from another location
+[15:57:29] [Server thread/INFO]: legoshie left the game
+[15:57:32] [Server thread/INFO]: legoshie joined the game
+[15:57:32] [Server thread/INFO]: legoshie[/127.0.0.1:65040] logged in with entity id 4067 at ([world]26.949221615510485, 113.0, 32.83191557907376)
+[15:57:45] [Server thread/INFO]: legoshie lost connection: Disconnected
+[15:57:45] [Server thread/INFO]: legoshie left the game
+[15:57:56] [Server thread/INFO]: Stopping server
+[15:57:56] [Server thread/INFO]: [testPlugin] Disabling testPlugin v1.0-SNAPSHOT
+[15:57:56] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.3+6788-6359df8
+[15:57:56] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[15:57:56] [Server thread/INFO]: Saving players
+[15:57:56] [Server thread/INFO]: Saving worlds
+[15:57:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[15:57:56] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[15:57:56] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[15:57:56] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[15:57:57] [Server thread/INFO]: [ChunkHolderManager] Saved 71 block chunks, 180 entity chunks, 0 poi chunks in world 'world' in 0,34s
+[15:57:57] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[15:57:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[15:57:57] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[15:57:57] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[15:57:57] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[15:57:57] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 1 entity chunks, 0 poi chunks in world 'world_nether' in 0,03s
+[15:57:57] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15:57:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[15:57:57] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[15:57:57] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[15:57:57] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[15:57:57] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0,01s
+[15:57:57] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15:57:57] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[15:57:57] [Server thread/INFO]: Flushing Chunk IO
+[15:57:57] [Server thread/INFO]: Closing Thread Pool
+[15:57:57] [Server thread/INFO]: Closing Server
