@@ -35,13 +35,6 @@ public final class TestPlugin extends JavaPlugin implements Listener{
     }
 
     @EventHandler
-    public void onPlayerJoin(final Audience player) {
-        final Component header = Component.text("Code war Server", NamedTextColor.BLUE);
-        final Component footer = Component.text("JAVA == Strong Coffee");
-        player.sendPlayerListHeaderAndFooter(header, footer);
-    }
-
-    @EventHandler
     public void onPlayerInteractWithEntity(PlayerInteractEntityEvent event) {
 
         Entity entity = event.getRightClicked();
