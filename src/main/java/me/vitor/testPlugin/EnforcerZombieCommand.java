@@ -1,46 +1,47 @@
 package me.vitor.testPlugin;
 
+import co.aikar.commands.BaseCommand;
+import co.aikar.commands.CommandHelp;
+import co.aikar.commands.annotation.CommandAlias;
+import co.aikar.commands.annotation.Default;
+import co.aikar.commands.annotation.HelpCommand;
 import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.format.NamedTextColor;
-import org.bukkit.ChatColor;
 import org.bukkit.attribute.Attribute;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Zombie;
 import org.bukkit.metadata.FixedMetadataValue;
 
+@CommandAlias("spawnEnforcerZombie")
+public class EnforcerZombieCommand extends BaseCommand {
 
-public class EnforcerZombieCommand implements CommandExecutor {
+    @Default
+    public static void onCommand(Player player) {
 
-    @Override
-    public boolean onCommand(CommandSender commandSender, Command command, String label, String[] args) {
-        if (!(commandSender instanceof Player)) {
-            commandSender.sendMessage("Only players can use this command!");
-            return true;
-        }
+        Zombie zombie = player.getWorld().spawn(player.getLocation(), Zombie.class);
 
-        if (args.length > 0){
-            return false;
-        }
+        zombie.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(zombie.getHealth()*2);
+        zombie.setHealth(zombie.getHealth()*2);
 
-        Player player = (Player) commandSender;
+        zombie.setMetadata("Modifiedhealth", new FixedMetadataValue(TestPlugin.getInstance(), true));
+        zombie.setMetadata("EnforcerZombie", new FixedMetadataValue(TestPlugin.getInstance(), true));
 
-        Zombie zumbi = player.getWorld().spawn(player.getLocation(), Zombie.class);
 
-        double vidaMaxima = zumbi.getMaxHealth() * 2;
-        zumbi.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(vidaMaxima);
-        zumbi.setHealth(vidaMaxima);
+        var zombieNameColor = Component.text("Enforcer Zombie");
 
-        zumbi.setMetadata("ModifiedHealth", new FixedMetadataValue(TestPlugin.getInstance(), true));
-        zumbi.setMetadata("EnforcerZombie", new FixedMetadataValue(TestPlugin.getInstance(), true));
+        zombie.customName(zombieNameColor);
+        zombie.setCustomNameVisible(true);
 
-        var zumbiNameColor = Component.text("Zumbi Enforcer").color(NamedTextColor.RED);
+        //Fazer uma função para a vida aparece abaixo do nome do zumbi
+        //fazer uma feature / função
 
-        zumbi.customName(zumbiNameColor);
-        zumbi.setCustomNameVisible(true);
 
-        return false;
     }
+
+    @HelpCommand
+    public void doHelp(CommandSender sender, CommandHelp help){
+
+        help.showHelp();
+    }
+
 }

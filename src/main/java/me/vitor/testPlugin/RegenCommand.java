@@ -22,9 +22,9 @@ public class RegenCommand extends BaseCommand {
 
         if(health + regen > 20) {
             player.setHealth(20);
-            player.sendMessage(ChatColor.GREEN + "cura 100%");
+            player.sendMessage("\u00a72 cura 100%");
         } else{
-            player.sendMessage(ChatColor.GREEN + "Você curou " + (regen/2) + " corações");
+            player.sendMessage("\u00a72 Você curou " + (regen/2) + " corações");
             player.setHealth(health + regen);
         }
 

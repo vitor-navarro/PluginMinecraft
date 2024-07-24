@@ -26,20 +26,11 @@ public final class TestPlugin extends JavaPlugin implements Listener{
 
         var manager = new PaperCommandManager(this);
         manager.registerCommand(new RegenCommand());
+
+        manager.registerCommand(new EnforcerZombieCommand());
+
         manager.enableUnstableAPI("help");
 
-        if (getCommand("spawnEnforcerZombie") != null) {
-            getCommand("spawnEnforcerZombie").setExecutor(new EnforcerZombieCommand());
-        } else {
-            getLogger().severe("Command spawnEnforcerZombie not found in plugin.yml!");
-        }
-
-        /*
-        if (getCommand("curar") != null) {
-            getCommand("curar").setExecutor(new RegenCommand());
-        } else {
-            getLogger().severe("Command curar not found in plugin.yml!");
-        }*/
     }
 
     @EventHandler
@@ -55,7 +46,7 @@ public final class TestPlugin extends JavaPlugin implements Listener{
             pig.getWorld().createExplosion(pig.getLocation(), 4.0f, false, false);
         }
 
-        if (entity instanceof Zombie && entity.hasMetadata("EnforcerZombie") && player.getItemInHand().getType() == item){
+        if (entity instanceof Zombie && entity.hasMetadata("EnforcerZombie") && player.getInventory().getItemInMainHand().getType() == item){
             Zombie zumbi = (Zombie) event.getRightClicked();
 
             zumbi.getWorld().createExplosion(zumbi.getLocation(), 2.5F);

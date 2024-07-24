@@ -44,7 +44,7 @@ tasks.withType(JavaCompile).configureEach {
 
 task buildmv(dependsOn: ['shadowJar'], type: Copy) {
     from "\\build\\libs"
-    into "C:\\Users\\Vitor\\Desktop\\1.20.6 - paperTestServer\\plugins"
+    into "C:\\Users\\Vitor\\Desktop\\projetos Intell IDE java\\testMinecraftServer\\testPlugin\\1.20.6 - paperTestServer\\plugins"
 }
 
 shadowJar {
