@@ -4,6 +4,8 @@ import co.aikar.commands.BaseCommand;
 import co.aikar.commands.annotation.CommandAlias;
 import co.aikar.commands.annotation.Default;
 import co.aikar.commands.annotation.Optional;
+import co.aikar.commands.annotation.Subcommand;
+import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
 @CommandAlias("spleef")
@@ -14,11 +16,30 @@ public class MinigameSpleef extends BaseCommand {
 
     }
 
-    public static void giveShovel(){}
+    @Subcommand("shovel|giveshovel")
+    public static void giveShovel(Player player){
 
-    public static void createDeathLayer(){}
+        player.sendMessage("Shovel");
+    }
 
-    public static void createSnowLayer(@Optional int width, @Optional int height){}
+    @Subcommand("createdeathlayer|CDL")
+    public static void createDeathLayer(Player player, @Optional Integer width, @Optional Integer height){
 
-    public static void createMinigamePreset(){}
+        Location location = player.getLocation();
+        player.sendMessage("CDL");
+    }
+
+    @Subcommand("createsnowlayer|CNL")
+    public static void createSnowLayer(Player player, @Optional Integer width, @Optional Integer height){
+
+        Location location = player.getLocation();
+        player.sendMessage("CNL");
+    }
+
+    @Subcommand("createminigamepreset|create|minigame|game")
+    public static void createMinigamePreset(Player player){
+
+        Location location = player.getLocation();
+        player.sendMessage("Minigame");
+    }
 }
