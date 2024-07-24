@@ -1,9 +1,6 @@
 package me.vitor.testPlugin;
 
 import co.aikar.commands.PaperCommandManager;
-import net.kyori.adventure.audience.Audience;
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
@@ -32,6 +29,8 @@ public final class TestPlugin extends JavaPlugin implements Listener{
 
         manager.registerCommand(new CommandRegen());
         manager.registerCommand(new CommandEnforcerZombie());
+        manager.registerCommand(new MinigameSpleef());
+
     }
 
     @EventHandler
