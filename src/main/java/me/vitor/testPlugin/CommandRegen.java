@@ -3,14 +3,13 @@ package me.vitor.testPlugin;
 import co.aikar.commands.BaseCommand;
 import co.aikar.commands.CommandHelp;
 import co.aikar.commands.annotation.*;
-import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import static org.bukkit.Sound.ENTITY_CAT_PURREOW;
 
 @CommandAlias("curar|regen")
-public class RegenCommand extends BaseCommand {
+public class CommandRegen extends BaseCommand {
 
     @Default
     @CommandCompletion("@range:0-20")
@@ -31,6 +30,7 @@ public class RegenCommand extends BaseCommand {
         player.playSound(player.getLocation(), ENTITY_CAT_PURREOW, 5.5f, 5.5f);
     }
 
+    @CatchUnknown
     @HelpCommand
     public void doHelp(CommandSender sender, CommandHelp help){
         help.showHelp();

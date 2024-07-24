@@ -1,6 +1,9 @@
 package me.vitor.testPlugin;
 
 import co.aikar.commands.PaperCommandManager;
+import net.kyori.adventure.audience.Audience;
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
@@ -25,12 +28,16 @@ public final class TestPlugin extends JavaPlugin implements Listener{
         getServer().getPluginManager().registerEvents(this, this);
 
         var manager = new PaperCommandManager(this);
-        manager.registerCommand(new RegenCommand());
-
-        manager.registerCommand(new EnforcerZombieCommand());
-
         manager.enableUnstableAPI("help");
 
+        manager.registerCommand(new CommandRegen());
+        manager.registerCommand(new CommandEnforcerZombie());
+    }
+
+    public void onPlayerJoin(final Audience player) {
+        final Component header = Component.text("Code war Server", NamedTextColor.BLUE);
+        final Component footer = Component.text("JAVA == Strong Coffee");
+        player.sendPlayerListHeaderAndFooter(header, footer);
     }
 
     @EventHandler

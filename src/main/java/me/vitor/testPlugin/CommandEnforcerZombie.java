@@ -13,7 +13,7 @@ import org.bukkit.entity.Zombie;
 import org.bukkit.metadata.FixedMetadataValue;
 
 @CommandAlias("spawnEnforcerZombie")
-public class EnforcerZombieCommand extends BaseCommand {
+public class CommandEnforcerZombie extends BaseCommand {
 
     @Default
     public static void onCommand(Player player) {
