@@ -34,6 +34,7 @@ public final class TestPlugin extends JavaPlugin implements Listener{
         manager.registerCommand(new CommandEnforcerZombie());
     }
 
+    @EventHandler
     public void onPlayerJoin(final Audience player) {
         final Component header = Component.text("Code war Server", NamedTextColor.BLUE);
         final Component footer = Component.text("JAVA == Strong Coffee");
