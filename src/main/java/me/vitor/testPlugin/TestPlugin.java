@@ -2,6 +2,7 @@ package me.vitor.testPlugin;
 
 import co.aikar.commands.PaperCommandManager;
 import org.bukkit.Material;
+import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
@@ -10,6 +11,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class TestPlugin extends JavaPlugin implements Listener{
@@ -23,6 +25,11 @@ public final class TestPlugin extends JavaPlugin implements Listener{
         item = getMaterialFromString(getConfig().getString("item"));
 
         getServer().getPluginManager().registerEvents(this, this);
+
+        CustomBlock customBlock = new CustomBlock(Material.SNOW_BLOCK, new ItemStack(Material.SNOWBALL), 1);
+        CustomBlockListener customBlockListener = new CustomBlockListener(customBlock);
+        getServer().getPluginManager().registerEvents(customBlockListener, this);
+
 
         var manager = new PaperCommandManager(this);
         manager.enableUnstableAPI("help");
