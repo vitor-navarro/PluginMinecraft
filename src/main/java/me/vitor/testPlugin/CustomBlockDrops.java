@@ -5,12 +5,12 @@ import org.bukkit.block.Block;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
 
-public class CustomBlock {
+public class CustomBlockDrops {
     private final Material blockType;
     private final ItemStack dropItem;
     private final int dropAmount;
 
-    public CustomBlock(Material blockType, ItemStack dropItem, int dropAmount){
+    public CustomBlockDrops(Material blockType, ItemStack dropItem, int dropAmount){
 
         this.blockType = blockType;
         this.dropItem = dropItem;

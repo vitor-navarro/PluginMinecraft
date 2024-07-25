@@ -2,7 +2,6 @@ package me.vitor.testPlugin;
 
 import co.aikar.commands.PaperCommandManager;
 import org.bukkit.Material;
-import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
@@ -26,8 +25,8 @@ public final class TestPlugin extends JavaPlugin implements Listener{
 
         getServer().getPluginManager().registerEvents(this, this);
 
-        CustomBlock customBlock = new CustomBlock(Material.SNOW_BLOCK, new ItemStack(Material.SNOWBALL), 1);
-        CustomBlockListener customBlockListener = new CustomBlockListener(customBlock);
+        CustomBlockDrops customBlock = new CustomBlockDrops(Material.SNOW_BLOCK, new ItemStack(Material.SNOWBALL), 1);
+        CustomBlockListenerDrops customBlockListener = new CustomBlockListenerDrops(customBlock);
         getServer().getPluginManager().registerEvents(customBlockListener, this);
 
 

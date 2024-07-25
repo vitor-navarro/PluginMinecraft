@@ -5,10 +5,10 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 
-public class CustomBlockListener implements Listener {
-    private final CustomBlock customBlock;
+public class CustomBlockListenerDrops implements Listener {
+    private final CustomBlockDrops customBlock;
 
-    public CustomBlockListener(CustomBlock customBlock){
+    public CustomBlockListenerDrops(CustomBlockDrops customBlock){
         this.customBlock = customBlock;
     }
 
