@@ -15,14 +15,47 @@ import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.bukkit.Bukkit.getPluginManager;
 
 @CommandAlias("spleef")
 public class MinigameSpleef extends BaseCommand {
 
+    private static int maxPlayers = 12;
+    private static List<Player> players;
+    private static boolean minigameActive;
+
     @Default
     public static void onCommand(Player player) {
 
+        players = new ArrayList<Player>();
+        minigameActive = true;
+
+
+
+        //create minigame, use functions
+    }
+
+    //TODO add teleport to minigame
+    @Subcommand("addplayer|add")
+    public static void addPlayer(Player player){
+
+        if(minigameActive == false){
+            player.sendMessage("Minigame spleef não ativado, execute /spleef");
+            return;
+        } else if(players.size() >= maxPlayers){
+            player.sendMessage("Sala spleef cheia");
+            return;
+        }
+
+        players.add(player);
+
+        for(Player player1 : players){
+            String message = String.format("O %s entrou na partida \u00A7b <%d/%d>", player.getName(), players.size(), maxPlayers);
+            player1.sendMessage(message);
+        }
     }
 
     @Subcommand("shovel|giveshovel|getshovel")
@@ -65,4 +98,6 @@ public class MinigameSpleef extends BaseCommand {
         Location location = player.getLocation();
         player.sendMessage("Minigame");
     }
+
+
 }

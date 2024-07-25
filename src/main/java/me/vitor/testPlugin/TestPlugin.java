@@ -26,7 +26,7 @@ public final class TestPlugin extends JavaPlugin implements Listener{
         getServer().getPluginManager().registerEvents(this, this);
 
         CustomBlockDrops customBlock = new CustomBlockDrops(Material.SNOW_BLOCK, new ItemStack(Material.SNOWBALL), 1);
-        CustomBlockListenerDrops customBlockListener = new CustomBlockListenerDrops(customBlock);
+        CustomBlockDropsListener customBlockListener = new CustomBlockDropsListener(customBlock);
         getServer().getPluginManager().registerEvents(customBlockListener, this);
 
 
