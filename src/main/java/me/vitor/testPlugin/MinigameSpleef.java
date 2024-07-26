@@ -30,11 +30,13 @@ public class MinigameSpleef extends BaseCommand {
     @Default
     public static void onCommand(Player player) {
 
+        if(minigameActive){
+            player.sendMessage("Minigame\u00A7b spleef\u00A7r já ativo");
+            return;
+        }
+
         players = new ArrayList<Player>();
         minigameActive = true;
-
-
-
         //create minigame, use functions
     }
 
@@ -42,11 +44,14 @@ public class MinigameSpleef extends BaseCommand {
     @Subcommand("addplayer|add")
     public static void addPlayer(Player player){
 
-        if(minigameActive == false){
-            player.sendMessage("Minigame spleef não ativado, execute /spleef");
+        if(!minigameActive){
+            player.sendMessage("Minigame \u00A7bspleef\u00A7r não ativado, execute /spleef");
+            return;
+        } else if (players.contains((player))) {
+            player.sendMessage("Você já está na sala de\u00A7b spleef");
             return;
         } else if(players.size() >= maxPlayers){
-            player.sendMessage("Sala spleef cheia");
+            player.sendMessage("Sala\u00A7c spleef\u00A7r cheia");
             return;
         }
 
@@ -74,6 +79,8 @@ public class MinigameSpleef extends BaseCommand {
         //ocultar encantamentos
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         shovel.setItemMeta(meta);
+
+        //TODO deixar a pá com durabilidad infinita
 
         player.getInventory().addItem(shovel);
     }
