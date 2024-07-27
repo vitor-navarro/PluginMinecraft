@@ -3,10 +3,12 @@ package me.vitor.testPlugin;
 import co.aikar.commands.BaseCommand;
 import co.aikar.commands.annotation.CommandAlias;
 import co.aikar.commands.annotation.Default;
-import co.aikar.commands.annotation.Optional;
 import co.aikar.commands.annotation.Subcommand;
+import co.aikar.commands.annotation.Optional;
+
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
+
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -84,66 +86,109 @@ public class MinigameSpleef extends BaseCommand {
         player.getInventory().addItem(shovel);
     }
 
+    private static void createLayer(Player player, Integer size, Material material, int incrementY){
+
+        Location location = player.getLocation();
+
+        double baseX = location.getX() + 4.0;
+        double baseY = location.getY() - 1.0;
+        double baseZ = location.getZ() + 1.0;
+
+        baseY += incrementY;
+
+        for(int x = (int) baseX; x < baseX + size; x++){
+            for(int z = (int) baseZ - size / 2; z < baseZ + Math.ceil((float) size / 2); z++){
+                Block block = player.getWorld().getBlockAt(x, (int) baseY, z);
+                block.setType(material);
+            }
+        }
+    }
+
+    //TODO
+    private static void createEdgeSquare(Player player, Integer size, Material material, int incrementY){
+        Location location = player.getLocation();
+
+        double baseX = location.getX() + 4.0;
+        double baseY = location.getY() - 1.0;
+        double baseZ = location.getZ() + 1.0;
+
+        baseY += incrementY;
+
+        for(int x = (int)baseX; x < (baseX + size + 1) ; x++) {
+            //First z line
+            player.getWorld().getBlockAt(x - 1, (int) baseY, (int) (baseZ - ((double) size / 2))).setType(material);
+            //Last z line
+            player.getWorld().getBlockAt(x-1, (int) baseY, (int) (baseZ + ((double) size /2) + 2)-1).setType(material);
+        }
+
+        for (int z = (int) (baseZ - (double) size / 2); z <= (baseZ + Math.ceil((float) size / 2)); z++) {
+            //First x line
+            player.getWorld().getBlockAt((int) baseX - 1, (int) baseY, z).setType(material);
+            //Last x line
+            player.getWorld().getBlockAt((int) (baseX + size + 1), (int) baseY, z).setType(material);
+        }
+    }
+
+
     //TODO set private and remove subcommand, finish startMinigame first
     @Subcommand("createdeathlayer|CDL")
-    public static void createDeathLayer(Player player, @Optional Integer width, @Optional Integer length){
+    public static void createDeathLayer(Player player, @Optional Integer width){
 
         width = width == null ? 16 : width; //caso null criará 16x16
-        length = length == null ? 4 : length;
 
         if(width % 2 == 1){
             player.sendMessage("O argumento Width tem que ser número par");
             return;
         }
 
-        Location location = player.getLocation();
-
-        double baseX = location.getX() + 1.0;
-        double baseY = location.getY() - 1.0;
-        double baseZ = location.getZ() + 1.0;
-
         //Creates top layer without base
         width -=1;
-        for(int x = (int)baseX; x < baseX + width; x++){
-            for(int z = (int) baseZ - width / 2; z < baseZ + Math.ceil((float) width / 2); z++){
-                Block block = player.getWorld().getBlockAt(x, (int) baseY, z);
-                block.setType(Material.LAVA);
-            }
-        }
+        Material material = Material.SNOW_BLOCK;
+        createLayer(player, width, material, 0);
 
-        width += 1;
+        //Create Base layer with bedrock
+        material = Material.BEDROCK;
+        createLayer(player, width, material, -1);
 
-        //Create Base
-        for(int x = (int)baseX; x < (baseX + width + 1) ; x++){
+        //Create external bedrock ring
+        createEdgeSquare(player, width, material, -1);
 
-            for(int z = (int) baseZ - width / 2; z < baseZ + Math.ceil((float) width / 2); z++){
+        //Create external bedrock ring 2
+        createEdgeSquare(player, width, material, 0);
+        /*
 
-                Block block1 = player.getWorld().getBlockAt(x-1, (int) baseY-1, z);
-                block1.setType(Material.BEDROCK);
-            }
-
-            //last line
-            player.getWorld().getBlockAt(x-1, (int) baseY-1, (int) (baseZ + ((double) width /2) +1)).setType(Material.BEDROCK);
-
-            //Square top edge Z axis
             //first z line
-            player.getWorld().getBlockAt(x-1, (int) baseY, (int) (baseZ - ((double) width /2))).setType(Material.BEDROCK);
+
+            player.getWorld().getBlockAt(x-1, (int) baseY+1, (int) (baseZ - ((double) width /2))).setType(Material.GLASS);
+            player.getWorld().getBlockAt(x-1, (int) baseY+2, (int) (baseZ - ((double) width /2))).setType(Material.GLASS);
+            player.getWorld().getBlockAt(x-1, (int) baseY+3, (int) (baseZ - ((double) width /2))).setType(Material.GLASS);
 
             //last z line
-            player.getWorld().getBlockAt(x-1, (int) baseY, (int) (baseZ + ((double) width /2) + 1)).setType(Material.BEDROCK);
+
+            player.getWorld().getBlockAt(x-1, (int) baseY+1, (int) (baseZ + ((double) width /2) + 1)).setType(Material.GLASS);
+            player.getWorld().getBlockAt(x-1, (int) baseY+2, (int) (baseZ + ((double) width /2) + 1)).setType(Material.GLASS);
+            player.getWorld().getBlockAt(x-1, (int) baseY+3, (int) (baseZ + ((double) width /2) + 1)).setType(Material.GLASS);
         }
 
         // Square top edge X axis
-        for (int z = (int) (baseZ - (double) width / 2); z <= (baseZ + Math.ceil((float) width / 2)); z++) {
+
             // First X line
-            player.getWorld().getBlockAt((int) baseX - 1, (int) baseY, z).setType(Material.BEDROCK);
+
+            player.getWorld().getBlockAt((int) baseX - 1, (int) baseY+1, z).setType(Material.GLASS);
+            player.getWorld().getBlockAt((int) baseX - 1, (int) baseY+2, z).setType(Material.GLASS);
+            player.getWorld().getBlockAt((int) baseX - 1, (int) baseY+3, z).setType(Material.GLASS);
 
             // last X line
-            player.getWorld().getBlockAt((int) (baseX + width), (int) baseY, z).setType(Material.BEDROCK);
-        }
+
+            player.getWorld().getBlockAt((int) (baseX + width), (int) baseY+1, z).setType(Material.GLASS);
+            player.getWorld().getBlockAt((int) (baseX + width), (int) baseY+2, z).setType(Material.GLASS);
+            player.getWorld().getBlockAt((int) (baseX + width), (int) baseY+3, z).setType(Material.GLASS);
+
+        }*/
 
     }
 
+    //TODO
     @Subcommand("createsnowlayer|CNL")
     public static void createSnowLayer(Player player, @Optional Integer width, @Optional Integer length){
 
@@ -151,6 +196,7 @@ public class MinigameSpleef extends BaseCommand {
         player.sendMessage("CNL");
     }
 
+    //TODO
     @Subcommand("createminigamepreset|create|minigame|game")
     public static void createMinigamePreset(Player player){
 
@@ -158,6 +204,10 @@ public class MinigameSpleef extends BaseCommand {
         player.sendMessage("Minigame");
     }
 
+    //TODO create a miniLobby, with sign to exit to the lobby and sign to enter the minigame
+    //optional if you have a main lobby for the minigame
+
+    //TODO
     @Subcommand("start|int")
     public static void startMinigame(){
         //verify deathlayer (exact 1)
