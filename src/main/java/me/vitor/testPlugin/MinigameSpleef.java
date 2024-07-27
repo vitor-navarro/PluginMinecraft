@@ -102,7 +102,7 @@ public class MinigameSpleef extends BaseCommand {
         for(int x = (int)baseX; x < baseX + width; x++){
             for(int z = (int) baseZ - width; z < (int) (baseZ + width)/2; z++){
                 Block block = player.getWorld().getBlockAt(x, (int) baseY, z);
-                block.setType(Material.SNOW_BLOCK);
+                block.setType(Material.SNOW_BLOCK); // trocar por lava
             }
         }
 
