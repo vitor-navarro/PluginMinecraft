@@ -1,10 +1,7 @@
 package me.vitor.testPlugin;
 
 import co.aikar.commands.BaseCommand;
-import co.aikar.commands.annotation.CommandAlias;
-import co.aikar.commands.annotation.Default;
-import co.aikar.commands.annotation.Subcommand;
-import co.aikar.commands.annotation.Optional;
+import co.aikar.commands.annotation.*;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
@@ -104,7 +101,6 @@ public class MinigameSpleef extends BaseCommand {
         }
     }
 
-    //TODO
     private static void createEdgeSquare(Player player, Integer size, Material material, int incrementY){
         Location location = player.getLocation();
 
@@ -142,8 +138,7 @@ public class MinigameSpleef extends BaseCommand {
         }
 
         //Creates top layer without base
-        width -=1;
-        Material material = Material.SNOW_BLOCK;
+        Material material = Material.LAVA;
         createLayer(player, width, material, 0);
 
         //Create Base layer with bedrock
@@ -155,63 +150,69 @@ public class MinigameSpleef extends BaseCommand {
 
         //Create external bedrock ring 2
         createEdgeSquare(player, width, material, 0);
-        /*
 
-            //first z line
+        //3 glass layers
+        for(int i = 0; i < 5; i++){
+            createEdgeSquare(player,width,Material.GLASS, (i+1));
+        }
+    }
 
-            player.getWorld().getBlockAt(x-1, (int) baseY+1, (int) (baseZ - ((double) width /2))).setType(Material.GLASS);
-            player.getWorld().getBlockAt(x-1, (int) baseY+2, (int) (baseZ - ((double) width /2))).setType(Material.GLASS);
-            player.getWorld().getBlockAt(x-1, (int) baseY+3, (int) (baseZ - ((double) width /2))).setType(Material.GLASS);
+    //TODO set private and remove subcommand, finish startMinigame first
+    @Subcommand("createsnowlayer|CNL")
+    public static void createSnowLayer(Player player, @Optional Integer width, int incrementY){
 
-            //last z line
+        width = width == null ? 16 : width; //caso null criará 16x16
 
-            player.getWorld().getBlockAt(x-1, (int) baseY+1, (int) (baseZ + ((double) width /2) + 1)).setType(Material.GLASS);
-            player.getWorld().getBlockAt(x-1, (int) baseY+2, (int) (baseZ + ((double) width /2) + 1)).setType(Material.GLASS);
-            player.getWorld().getBlockAt(x-1, (int) baseY+3, (int) (baseZ + ((double) width /2) + 1)).setType(Material.GLASS);
+        if(width % 2 == 1){
+            player.sendMessage("O argumento Width tem que ser número par");
+            return;
         }
 
-        // Square top edge X axis
+        createLayer(player, width, Material.SNOW_BLOCK, incrementY);
+        createEdgeSquare(player,width,Material.BEDROCK, incrementY);
 
-            // First X line
-
-            player.getWorld().getBlockAt((int) baseX - 1, (int) baseY+1, z).setType(Material.GLASS);
-            player.getWorld().getBlockAt((int) baseX - 1, (int) baseY+2, z).setType(Material.GLASS);
-            player.getWorld().getBlockAt((int) baseX - 1, (int) baseY+3, z).setType(Material.GLASS);
-
-            // last X line
-
-            player.getWorld().getBlockAt((int) (baseX + width), (int) baseY+1, z).setType(Material.GLASS);
-            player.getWorld().getBlockAt((int) (baseX + width), (int) baseY+2, z).setType(Material.GLASS);
-            player.getWorld().getBlockAt((int) (baseX + width), (int) baseY+3, z).setType(Material.GLASS);
-
-        }*/
-
+        //5 glass layers
+        for(int i = 0; i < 5; i++){
+            createEdgeSquare(player,width,Material.GLASS, (i+1+incrementY));
+        }
     }
 
-    //TODO
-    @Subcommand("createsnowlayer|CNL")
-    public static void createSnowLayer(Player player, @Optional Integer width, @Optional Integer length){
-
-        Location location = player.getLocation();
-        player.sendMessage("CNL");
-    }
-
-    //TODO
+    @Syntax("/spleef createminigamepreset <int layers> <int width>")
     @Subcommand("createminigamepreset|create|minigame|game")
-    public static void createMinigamePreset(Player player){
+    public static void createMinigamePreset1(Player player, @Optional Integer layers, @Optional Integer width){
 
-        Location location = player.getLocation();
-        player.sendMessage("Minigame");
+        width = width == null ? 16 : width; //caso null criará 16x16
+        layers = layers == null ? 2 : layers;
+
+        if(width % 2 == 1){
+            player.sendMessage("O argumento Width tem que ser número par");
+            return;
+        }
+
+        createDeathLayer(player, width);
+
+        for(int i = 1; i < layers+1; i++){
+            createSnowLayer(player, width, (6*i));
+        }
+
     }
 
     //TODO create a miniLobby, with sign to exit to the lobby and sign to enter the minigame
     //optional if you have a main lobby for the minigame
+    public static void createMiniLobby(Player player){}
+
 
     //TODO
     @Subcommand("start|int")
     public static void startMinigame(){
         //verify deathlayer (exact 1)
         //verify layer (more than 1)
+
+        //teleportar para minigame
+
+        //dar visão noturna
+        //dar pá
+
     }
 
 
