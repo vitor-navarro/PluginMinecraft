@@ -19,8 +19,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.bukkit.Bukkit.getPluginManager;
-
 @CommandAlias("spleef")
 public class MinigameSpleef extends BaseCommand {
 
@@ -86,12 +84,17 @@ public class MinigameSpleef extends BaseCommand {
         player.getInventory().addItem(shovel);
     }
 
-    //TODO finish and test
+    //TODO set private and remove subcommand, finish startMinigame first
     @Subcommand("createdeathlayer|CDL")
     public static void createDeathLayer(Player player, @Optional Integer width, @Optional Integer length){
 
-        width = width == null ? 8 : width;
+        width = width == null ? 16 : width; //caso null criará 16x16
         length = length == null ? 4 : length;
+
+        if(width % 2 == 1){
+            player.sendMessage("O argumento Width tem que ser número par");
+            return;
+        }
 
         Location location = player.getLocation();
 
@@ -99,11 +102,44 @@ public class MinigameSpleef extends BaseCommand {
         double baseY = location.getY() - 1.0;
         double baseZ = location.getZ() + 1.0;
 
+        //Creates top layer without base
+        width -=1;
         for(int x = (int)baseX; x < baseX + width; x++){
-            for(int z = (int) baseZ - width; z < (int) (baseZ + width)/2; z++){
+            for(int z = (int) baseZ - width / 2; z < baseZ + Math.ceil((float) width / 2); z++){
                 Block block = player.getWorld().getBlockAt(x, (int) baseY, z);
-                block.setType(Material.SNOW_BLOCK); // trocar por lava
+                block.setType(Material.LAVA);
             }
+        }
+
+        width += 1;
+
+        //Create Base
+        for(int x = (int)baseX; x < (baseX + width + 1) ; x++){
+
+            for(int z = (int) baseZ - width / 2; z < baseZ + Math.ceil((float) width / 2); z++){
+
+                Block block1 = player.getWorld().getBlockAt(x-1, (int) baseY-1, z);
+                block1.setType(Material.BEDROCK);
+            }
+
+            //last line
+            player.getWorld().getBlockAt(x-1, (int) baseY-1, (int) (baseZ + ((double) width /2) +1)).setType(Material.BEDROCK);
+
+            //Square top edge Z axis
+            //first z line
+            player.getWorld().getBlockAt(x-1, (int) baseY, (int) (baseZ - ((double) width /2))).setType(Material.BEDROCK);
+
+            //last z line
+            player.getWorld().getBlockAt(x-1, (int) baseY, (int) (baseZ + ((double) width /2) + 1)).setType(Material.BEDROCK);
+        }
+
+        // Square top edge X axis
+        for (int z = (int) (baseZ - (double) width / 2); z <= (baseZ + Math.ceil((float) width / 2)); z++) {
+            // First X line
+            player.getWorld().getBlockAt((int) baseX - 1, (int) baseY, z).setType(Material.BEDROCK);
+
+            // last X line
+            player.getWorld().getBlockAt((int) (baseX + width), (int) baseY, z).setType(Material.BEDROCK);
         }
 
     }
@@ -120,6 +156,12 @@ public class MinigameSpleef extends BaseCommand {
 
         Location location = player.getLocation();
         player.sendMessage("Minigame");
+    }
+
+    @Subcommand("start|int")
+    public static void startMinigame(){
+        //verify deathlayer (exact 1)
+        //verify layer (more than 1)
     }
 
 
