@@ -9,6 +9,7 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.block.Block;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemFlag;
@@ -80,16 +81,31 @@ public class MinigameSpleef extends BaseCommand {
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         shovel.setItemMeta(meta);
 
-        //TODO deixar a pá com durabilidad infinita
+        //TODO deixar a pá com durabilidade infinita
 
         player.getInventory().addItem(shovel);
     }
 
+    //TODO finish and test
     @Subcommand("createdeathlayer|CDL")
     public static void createDeathLayer(Player player, @Optional Integer width, @Optional Integer length){
 
+        width = width == null ? 8 : width;
+        length = length == null ? 4 : length;
+
         Location location = player.getLocation();
-        player.sendMessage("CDL");
+
+        double baseX = location.getX() + 1.0;
+        double baseY = location.getY() - 1.0;
+        double baseZ = location.getZ() + 1.0;
+
+        for(int x = (int)baseX; x < baseX + width; x++){
+            for(int z = (int) baseZ - width; z < (int) (baseZ + width)/2; z++){
+                Block block = player.getWorld().getBlockAt(x, (int) baseY, z);
+                block.setType(Material.SNOW_BLOCK);
+            }
+        }
+
     }
 
     @Subcommand("createsnowlayer|CNL")
