@@ -21,7 +21,7 @@ import java.util.List;
 @CommandAlias("spleef")
 public class MinigameSpleef extends BaseCommand {
 
-    private static int maxPlayers = 12;
+    private static final int maxPlayers = 12;
     private static List<Player> players;
     private static boolean minigameActive;
 
@@ -127,7 +127,7 @@ public class MinigameSpleef extends BaseCommand {
 
 
     //TODO set private and remove subcommand, finish startMinigame first
-    @Subcommand("createdeathlayer|CDL")
+    @Subcommand("createdeathlayer")
     public static void createDeathLayer(Player player, @Optional Integer width){
 
         width = width == null ? 16 : width; //caso null criará 16x16
@@ -158,7 +158,7 @@ public class MinigameSpleef extends BaseCommand {
     }
 
     //TODO set private and remove subcommand, finish startMinigame first
-    @Subcommand("createsnowlayer|CNL")
+    @Subcommand("createsnowlayer")
     public static void createSnowLayer(Player player, @Optional Integer width, int incrementY){
 
         width = width == null ? 16 : width; //caso null criará 16x16
@@ -199,7 +199,30 @@ public class MinigameSpleef extends BaseCommand {
 
     //TODO create a miniLobby, with sign to exit to the lobby and sign to enter the minigame
     //optional if you have a main lobby for the minigame
-    public static void createMiniLobby(Player player){}
+    @Subcommand("createMiniLobby")
+    public static void createMiniLobby(Player player){
+
+        Location location = player.getLocation();
+
+        int x = (int) player.getX();
+        int y = (int) player.getY();
+        int z = (int) player.getZ();
+
+
+        Block centralBlock = player.getWorld().getBlockAt(x, (y-1), z);
+        centralBlock.setType(Material.BLUE_WOOL);
+        int tamanho = 2;
+
+        for (int dx = -tamanho; dx <= tamanho; dx++) {
+            for (int dz = -tamanho; dz <= tamanho; dz++) {
+
+                if (dx == 0 && dz == 0) continue;
+                player.getWorld().getBlockAt(x + dx, y - 1, z + dz).setType(Material.QUARTZ_BLOCK);
+            }
+        }
+
+
+    }
 
 
     //TODO
