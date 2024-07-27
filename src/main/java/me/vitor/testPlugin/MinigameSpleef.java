@@ -208,8 +208,6 @@ public class MinigameSpleef extends BaseCommand {
         //verify deathlayer (exact 1)
         //verify layer (more than 1)
 
-        //teleportar para minigame
-
         //dar visão noturna
         //dar pá
 
