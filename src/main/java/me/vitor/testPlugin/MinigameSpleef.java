@@ -9,6 +9,9 @@ import net.kyori.adventure.text.format.TextColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
+import org.bukkit.block.BlockState;
+import org.bukkit.block.data.type.WallSign;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemFlag;
@@ -177,6 +180,49 @@ public class MinigameSpleef extends BaseCommand {
         }
     }
 
+    //TODO create a miniLobby, with sign to exit to the lobby and sign to enter the minigame
+    //optional if you have a main lobby for the minigame
+    @Subcommand("createMiniLobby")
+    public static void createMiniLobby(Player player){
+
+        Location location = player.getLocation();
+
+        int x = (int) player.getX();
+        int y = (int) player.getY();
+        int z = (int) player.getZ();
+
+        Block centralBlock = player.getWorld().getBlockAt(x, (y-1), z);
+        centralBlock.setType(Material.BLUE_WOOL);
+        int tamanho = 2;
+
+        for (int dx = -tamanho; dx <= tamanho; dx++) {
+            for (int dz = -tamanho; dz <= tamanho; dz++) {
+
+                if (dx == 0 && dz == 0) continue;
+                player.getWorld().getBlockAt(x + dx, y - 1, z + dz).setType(Material.QUARTZ_BLOCK);
+            }
+        }
+
+        x += 2;
+        y += 1;
+
+        //sign support block
+        player.getWorld().getBlockAt(x+1, y, z).setType(Material.QUARTZ_BLOCK);
+
+        //sign
+        Block signBlock = player.getWorld().getBlockAt(x, y, z);
+        signBlock.setType(Material.OAK_WALL_SIGN);
+
+        BlockState state = signBlock.getState();
+        if (state instanceof WallSign wallSign) {
+            wallSign.setFacing(BlockFace.EAST);
+        }
+
+
+    }
+
+
+    @CommandCompletion("@range:0-10 @range:0-50")
     @Syntax("/spleef createminigamepreset <int layers> <int width>")
     @Subcommand("createminigamepreset|create|minigame|game")
     public static void createMinigamePreset1(Player player, @Optional Integer layers, @Optional Integer width){
@@ -195,35 +241,9 @@ public class MinigameSpleef extends BaseCommand {
             createSnowLayer(player, width, (6*i));
         }
 
-    }
-
-    //TODO create a miniLobby, with sign to exit to the lobby and sign to enter the minigame
-    //optional if you have a main lobby for the minigame
-    @Subcommand("createMiniLobby")
-    public static void createMiniLobby(Player player){
-
-        Location location = player.getLocation();
-
-        int x = (int) player.getX();
-        int y = (int) player.getY();
-        int z = (int) player.getZ();
-
-
-        Block centralBlock = player.getWorld().getBlockAt(x, (y-1), z);
-        centralBlock.setType(Material.BLUE_WOOL);
-        int tamanho = 2;
-
-        for (int dx = -tamanho; dx <= tamanho; dx++) {
-            for (int dz = -tamanho; dz <= tamanho; dz++) {
-
-                if (dx == 0 && dz == 0) continue;
-                player.getWorld().getBlockAt(x + dx, y - 1, z + dz).setType(Material.QUARTZ_BLOCK);
-            }
-        }
-
+        createMiniLobby(player);
 
     }
-
 
     //TODO
     @Subcommand("start|int")
