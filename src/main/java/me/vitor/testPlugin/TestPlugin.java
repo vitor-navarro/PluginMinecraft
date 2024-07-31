@@ -23,9 +23,10 @@ public final class TestPlugin extends JavaPlugin implements Listener {
 
         item = getMaterialFromString(getConfig().getString("item"));
 
-        CustomBlockDrops customBlock = new CustomBlockDrops(Material.SNOW_BLOCK, new ItemStack(Material.SNOWBALL));
+        CustomBlockDrops customBlock = new CustomBlockDrops(Material.SNOW_BLOCK, Material.SNOWBALL);
         customBlock.setDropAmount(1);
         customBlock.setDropChance(0.25);
+        customBlock.addItemDrop();
         CustomBlockDropsListener customBlockListener = new CustomBlockDropsListener(customBlock);
 
         getServer().getPluginManager().registerEvents(customBlockListener, this);
