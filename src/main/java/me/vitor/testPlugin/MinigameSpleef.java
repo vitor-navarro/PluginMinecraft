@@ -76,10 +76,11 @@ public class MinigameSpleef extends BaseCommand {
         shovel.setItemMeta(meta);
 
         shovel.addUnsafeEnchantment(Enchantment.EFFICIENCY, 10);
+        shovel.addUnsafeEnchantment(Enchantment.UNBREAKING, 10);
 
         //ocultar encantamentos
-        meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-        shovel.setItemMeta(meta);
+        //meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+        //shovel.setItemMeta(meta);
 
         //TODO deixar a pá com durabilidade infinita
 
