@@ -13,16 +13,16 @@ public class CustomBlockDrops {
     /*
     blockType = Material, example Material.SNOW_BLOCK
     ItemStack = org.bukkit.inventory.ItemStack, example new ItemStack(Material.SNOWBALL)
-    dropAmount = int Quantity of items dropped, default 1, example 1
+    dropAmount = int Quantity of items dropped, default 1, example 1, 2, 3
     dropChance = double probability of dropping the item, default 1, example: 0.125, 0.25, 0.50
      */
 
     private final Material blockType;
     private final ItemStack itemStack;
     @Getter @Setter
-    private int dropAmount;
+    private int dropAmount = 1;
     @Getter @Setter
-    private double dropChance; //example: 0.125, 0.25, 0.50
+    private double dropChance = 1; //example: 0.125, 0.25, 0.50
 
     public CustomBlockDrops(Material blockType, ItemStack itemStack) {
         this.blockType = blockType;
