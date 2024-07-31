@@ -9,12 +9,14 @@ public class CustomBlockDrops {
     private final Material blockType;
     private final ItemStack dropItem;
     private final int dropAmount;
+    private final double dropChance;
 
-    public CustomBlockDrops(Material blockType, ItemStack dropItem, int dropAmount){
+    public CustomBlockDrops(Material blockType, ItemStack dropItem, int dropAmount,double dropChance){
 
         this.blockType = blockType;
         this.dropItem = dropItem;
         this.dropAmount = dropAmount;
+        this.dropChance = dropChance;
 
     }
 

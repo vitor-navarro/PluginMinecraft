@@ -26,7 +26,6 @@ public class CommandEnforcerZombie extends BaseCommand {
         zombie.setMetadata("Modifiedhealth", new FixedMetadataValue(TestPlugin.getInstance(), true));
         zombie.setMetadata("EnforcerZombie", new FixedMetadataValue(TestPlugin.getInstance(), true));
 
-
         var zombieNameColor = Component.text("Enforcer Zombie");
 
         zombie.customName(zombieNameColor);
@@ -40,7 +39,6 @@ public class CommandEnforcerZombie extends BaseCommand {
 
     @HelpCommand
     public void doHelp(CommandSender sender, CommandHelp help){
-
         help.showHelp();
     }
 

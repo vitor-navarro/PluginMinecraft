@@ -25,9 +25,12 @@ public final class TestPlugin extends JavaPlugin implements Listener{
 
         getServer().getPluginManager().registerEvents(this, this);
 
-        CustomBlockDrops customBlock = new CustomBlockDrops(Material.SNOW_BLOCK, new ItemStack(Material.SNOWBALL), 1);
+        //TODO diminuir a probabilidade de dropar bola de neve 25% de chance (se muito diminuir para 10)
+        CustomBlockDrops customBlock = new CustomBlockDrops(Material.SNOW_BLOCK, new ItemStack(Material.SNOWBALL), 1, 0.25);
         CustomBlockDropsListener customBlockListener = new CustomBlockDropsListener(customBlock);
+
         getServer().getPluginManager().registerEvents(customBlockListener, this);
+        getServer().getPluginManager().registerEvents(new SnowballHitListener(), this);
 
 
         var manager = new PaperCommandManager(this);
