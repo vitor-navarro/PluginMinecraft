@@ -1,221 +1,284 @@
-[08:10:21] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar'...
-[08:10:23] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar' in 2468ms.
-[08:10:42] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[08:10:48] [ServerMain/INFO]: Loaded 1175 recipes
-[08:10:49] [ServerMain/INFO]: Loaded 1276 advancements
-[08:10:49] [Server thread/INFO]: Starting minecraft server version 1.20.6
-[08:10:49] [Server thread/INFO]: Loading properties
-[08:10:49] [Server thread/INFO]: This server is running Paper version 1.20.6-148-ver/1.20.6@20f5165 (2024-07-02T15:37:33Z) (Implementing API version 1.20.6-R0.1-SNAPSHOT)
-[08:10:52] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[08:10:52] [Server thread/INFO]: Using 4 threads for Netty based IO
-[08:10:54] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+[09:30:18] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[09:30:24] [ServerMain/INFO]: Loaded 1175 recipes
+[09:30:24] [ServerMain/INFO]: Loaded 1276 advancements
+[09:30:25] [Server thread/INFO]: Starting minecraft server version 1.20.6
+[09:30:25] [Server thread/INFO]: Loading properties
+[09:30:25] [Server thread/INFO]: This server is running Paper version 1.20.6-148-ver/1.20.6@20f5165 (2024-07-02T15:37:33Z) (Implementing API version 1.20.6-R0.1-SNAPSHOT)
+[09:30:27] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[09:30:27] [Server thread/INFO]: Using 4 threads for Netty based IO
+[09:30:29] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
     We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
     For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[08:10:54] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 2 worker threads, and gen parallelism of 2 threads
-[08:10:55] [Server thread/INFO]: Default game type: SURVIVAL
-[08:10:55] [Server thread/INFO]: Generating keypair
-[08:10:55] [Server thread/INFO]: Starting Minecraft server on *:25565
-[08:10:55] [Server thread/INFO]: Using default channel type
-[08:10:55] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[08:10:55] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[08:10:57] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.3+6788-6359df8
-[08:11:04] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@8ab668c]
-[08:11:04] [Server thread/INFO]: [testPlugin] Loading server plugin testPlugin v1.0-SNAPSHOT
-[08:11:04] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[08:11:04] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.3+6788-6359df8
-[08:11:04] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[08:11:04] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[08:11:07] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R4.PaperweightAdapter as the Bukkit adapter
-[08:11:12] [Server thread/INFO]: Preparing level "world"
-[08:11:15] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[08:11:19] [Server thread/INFO]: Time elapsed: 3491 ms
-[08:11:19] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[08:11:19] [Server thread/INFO]: Time elapsed: 378 ms
-[08:11:19] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[08:11:20] [Server thread/INFO]: Time elapsed: 417 ms
-[08:11:20] [Server thread/INFO]: [testPlugin] Enabling testPlugin v1.0-SNAPSHOT
-[08:11:20] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Commands' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:11:20] [Server thread/INFO]: [testPlugin] [ACF] Enabled Asynchronous Tab Completion Support!
-[08:11:21] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:11:21] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:11:21] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:11:21] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:11:21] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:11:21] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:11:21] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef addplayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:11:21] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:11:21] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminigamepreset' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:11:21] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef shovel' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:11:21] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createsnowlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:11:21] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef start' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:11:21] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminilobby' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:11:21] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createdeathlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:11:21] [Server thread/INFO]: Running delayed init tasks
-[08:11:21] [Server thread/INFO]: Done (32.019s)! For help, type "help"
-[08:11:21] [Server thread/INFO]: Timings Reset
-[08:12:24] [User Authenticator #0/INFO]: UUID of player legoshie is 892068f6-4d8d-41ff-bac4-33a8920862ef
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] Can't read players locale, you will be unable to automatically detect players language. Only Bukkit 1.7+ is supported for this.
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] java.lang.NoSuchFieldException: locale
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.reflectionrewriter.runtime.AbstractDefaultRulesReflectionProxy.getDeclaredField(AbstractDefaultRulesReflectionProxy.java:90)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.pluginremap.reflect.PaperReflectionHolder.getDeclaredField(Unknown Source)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.readPlayerLocale(BukkitCommandManager.java:317)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.ACFBukkitListener.onPlayerJoin(ACFBukkitListener.java:57)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at com.destroystokyo.paper.event.executor.MethodHandleEventExecutor.execute(MethodHandleEventExecutor.java:40)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:81)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.players.PlayerList.placeNewPlayer(PlayerList.java:347)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.network.ServerConfigurationPacketListenerImpl.handleConfigurationFinished(ServerConfigurationPacketListenerImpl.java:153)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:22)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:13)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:55)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.TickTask.run(TickTask.java:18)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:151)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1511)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:195)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:125)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1488)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1411)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:135)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1377)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1238)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
-[08:12:27] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Thread.run(Thread.java:1583)
-[08:12:27] [Server thread/INFO]: legoshie joined the game
-[08:12:27] [Server thread/INFO]: legoshie[/127.0.0.1:59750] logged in with entity id 18 at ([world]629.0161974573481, 73.1373915587813, 146.48641901297907)
-[08:12:38] [Server thread/INFO]: legoshie issued server command: /spleef createminilobby
-[08:13:12] [Server thread/INFO]: legoshie issued server command: /spleef createminigamepreset 5
-[08:15:49] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[08:15:49] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[08:15:49] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[08:15:49] [Server thread/INFO]: Using 4 threads for Netty based IO
-[08:15:49] [Server thread/INFO]: [testPlugin] Disabling testPlugin v1.0-SNAPSHOT
-[08:15:49] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.3+6788-6359df8
-[08:15:49] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
-[08:15:51] [Server thread/INFO]: Loaded 1175 recipes
-[08:15:51] [Server thread/INFO]: Loaded 1276 advancements
-[08:15:52] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar'...
-[08:15:53] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar' in 1010ms.
-[08:15:53] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.3+6788-6359df8
-[08:15:56] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@2aff3473]
-[08:15:56] [Server thread/INFO]: [testPlugin] Loading server plugin testPlugin v1.0-SNAPSHOT
-[08:15:56] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[08:15:56] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.3+6788-6359df8
-[08:15:56] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[08:15:57] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[08:15:57] [Server thread/WARN]: [WorldEdit] Server reload detected. This may cause various issues with WorldEdit and dependent plugins.
-[08:15:57] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R4.PaperweightAdapter as the Bukkit adapter
-[08:16:01] [Server thread/INFO]: [testPlugin] Enabling testPlugin v1.0-SNAPSHOT
-[08:16:01] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Commands' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:16:01] [Server thread/INFO]: [testPlugin] [ACF] Enabled Asynchronous Tab Completion Support!
-[08:16:01] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:16:01] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:16:01] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:16:01] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:16:01] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:16:01] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:16:01] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef addplayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:16:01] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:16:01] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminigamepreset' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:16:01] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef shovel' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:16:01] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createsnowlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:16:01] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef start' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:16:01] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminilobby' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:16:01] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createdeathlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:16:02] [Server thread/INFO]: CONSOLE: Reload complete.
-[08:16:02] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 12939ms or 258 ticks behind
-[08:16:02] [Server thread/INFO]: Timings Reset
-[08:16:03] [Server thread/INFO]: [testPlugin] [ACF] Can't read players locale, you will be unable to automatically detect players language. Only Bukkit 1.7+ is supported for this.
-[08:16:03] [Server thread/INFO]: [testPlugin] [ACF] java.lang.NoSuchFieldException: locale
-[08:16:03] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
-[08:16:03] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.reflectionrewriter.runtime.AbstractDefaultRulesReflectionProxy.getDeclaredField(AbstractDefaultRulesReflectionProxy.java:90)
-[08:16:03] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.pluginremap.reflect.PaperReflectionHolder.getDeclaredField(Unknown Source)
-[08:16:03] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.readPlayerLocale(BukkitCommandManager.java:317)
-[08:16:03] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-[08:16:03] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1116)
-[08:16:03] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.lambda$new$1(BukkitCommandManager.java:131)
-[08:16:03] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
-[08:16:03] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
-[08:16:03] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1699)
-[08:16:03] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:467)
-[08:16:03] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1571)
-[08:16:03] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1231)
-[08:16:03] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
-[08:16:03] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Thread.run(Thread.java:1583)
-[08:16:19] [Server thread/INFO]: legoshie issued server command: /spleef createminigamepreset 5
-[08:52:46] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[08:52:46] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[08:52:46] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[08:52:46] [Server thread/INFO]: Using 4 threads for Netty based IO
-[08:52:47] [Server thread/INFO]: [testPlugin] Disabling testPlugin v1.0-SNAPSHOT
-[08:52:47] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.3+6788-6359df8
-[08:52:47] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
-[08:52:49] [Server thread/INFO]: Loaded 1175 recipes
-[08:52:49] [Server thread/INFO]: Loaded 1276 advancements
-[08:52:51] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar'...
-[08:52:51] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar' in 549ms.
-[08:52:52] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.3+6788-6359df8
-[08:52:55] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@132d9b6c]
-[08:52:55] [Server thread/INFO]: [testPlugin] Loading server plugin testPlugin v1.0-SNAPSHOT
-[08:52:55] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[08:52:55] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.3+6788-6359df8
-[08:52:55] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[08:52:55] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[08:52:55] [Server thread/WARN]: [WorldEdit] Server reload detected. This may cause various issues with WorldEdit and dependent plugins.
-[08:52:56] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R4.PaperweightAdapter as the Bukkit adapter
-[08:52:59] [Server thread/INFO]: [testPlugin] Enabling testPlugin v1.0-SNAPSHOT
-[08:52:59] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Commands' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:52:59] [Server thread/INFO]: [testPlugin] [ACF] Enabled Asynchronous Tab Completion Support!
-[08:52:59] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:52:59] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:52:59] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:52:59] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:52:59] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:52:59] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:52:59] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef addplayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:52:59] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:52:59] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminigamepreset' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:52:59] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef shovel' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:52:59] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createsnowlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:52:59] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef start' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:52:59] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminilobby' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:52:59] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createdeathlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:00] [Server thread/INFO]: CONSOLE: Reload complete.
-[08:53:00] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 13510ms or 270 ticks behind
-[08:53:00] [Server thread/INFO]: Timings Reset
-[08:53:01] [Server thread/INFO]: [testPlugin] [ACF] Can't read players locale, you will be unable to automatically detect players language. Only Bukkit 1.7+ is supported for this.
-[08:53:01] [Server thread/INFO]: [testPlugin] [ACF] java.lang.NoSuchFieldException: locale
-[08:53:01] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
-[08:53:01] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.reflectionrewriter.runtime.AbstractDefaultRulesReflectionProxy.getDeclaredField(AbstractDefaultRulesReflectionProxy.java:90)
-[08:53:01] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.pluginremap.reflect.PaperReflectionHolder.getDeclaredField(Unknown Source)
-[08:53:01] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.readPlayerLocale(BukkitCommandManager.java:317)
-[08:53:01] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-[08:53:01] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1116)
-[08:53:01] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.lambda$new$1(BukkitCommandManager.java:131)
-[08:53:01] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
-[08:53:01] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
-[08:53:01] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1699)
-[08:53:01] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:467)
-[08:53:01] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1571)
-[08:53:01] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1231)
-[08:53:01] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
-[08:53:01] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Thread.run(Thread.java:1583)
-[08:53:07] [Server thread/INFO]: legoshie issued server command: /spleef createminigamepreset 5
-[08:53:25] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[08:53:25] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[08:53:25] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[08:53:25] [Server thread/INFO]: Using 4 threads for Netty based IO
-[08:53:26] [Server thread/INFO]: [testPlugin] Disabling testPlugin v1.0-SNAPSHOT
-[08:53:26] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.3+6788-6359df8
-[08:53:26] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
-[08:53:28] [Server thread/INFO]: Loaded 1175 recipes
-[08:53:28] [Server thread/INFO]: Loaded 1276 advancements
-[08:53:28] [Paper Async Command Builder Thread Pool - 2/ERROR]: Caught previously unhandled exception :
-[08:53:28] [Paper Async Command Builder Thread Pool - 2/ERROR]: Paper Async Command Builder Thread Pool - 2
+[09:30:29] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 2 worker threads, and gen parallelism of 2 threads
+[09:30:29] [Server thread/INFO]: Default game type: SURVIVAL
+[09:30:29] [Server thread/INFO]: Generating keypair
+[09:30:29] [Server thread/INFO]: Starting Minecraft server on *:25565
+[09:30:30] [Server thread/INFO]: Using default channel type
+[09:30:30] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[09:30:30] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[09:30:30] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.3+6788-6359df8
+[09:30:34] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@29ba187a]
+[09:30:34] [Server thread/INFO]: [testPlugin] Loading server plugin testPlugin v1.0-SNAPSHOT
+[09:30:34] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[09:30:34] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.3+6788-6359df8
+[09:30:34] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[09:30:34] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[09:30:35] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R4.PaperweightAdapter as the Bukkit adapter
+[09:30:39] [Server thread/INFO]: Preparing level "world"
+[09:30:41] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[09:30:44] [Server thread/INFO]: Time elapsed: 2798 ms
+[09:30:44] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[09:30:44] [Server thread/INFO]: Time elapsed: 349 ms
+[09:30:44] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[09:30:44] [Server thread/INFO]: Time elapsed: 218 ms
+[09:30:44] [Server thread/INFO]: [testPlugin] Enabling testPlugin v1.0-SNAPSHOT
+[09:30:45] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Commands' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:30:45] [Server thread/INFO]: [testPlugin] [ACF] Enabled Asynchronous Tab Completion Support!
+[09:30:45] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:30:45] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:30:45] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:30:45] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:30:45] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:30:45] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:30:45] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminigamepreset' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:30:45] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef addplayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:30:45] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:30:45] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminilobby' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:30:45] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createsnowlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:30:45] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createdeathlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:30:45] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef start' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:30:45] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef shovel' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:30:45] [Server thread/INFO]: Running delayed init tasks
+[09:30:45] [Server thread/INFO]: Done (20.020s)! For help, type "help"
+[09:30:45] [Server thread/INFO]: Timings Reset
+[09:31:08] [User Authenticator #0/INFO]: UUID of player legoshie is 892068f6-4d8d-41ff-bac4-33a8920862ef
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] Can't read players locale, you will be unable to automatically detect players language. Only Bukkit 1.7+ is supported for this.
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] java.lang.NoSuchFieldException: locale
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.reflectionrewriter.runtime.AbstractDefaultRulesReflectionProxy.getDeclaredField(AbstractDefaultRulesReflectionProxy.java:90)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.pluginremap.reflect.PaperReflectionHolder.getDeclaredField(Unknown Source)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.readPlayerLocale(BukkitCommandManager.java:317)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.ACFBukkitListener.onPlayerJoin(ACFBukkitListener.java:57)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at com.destroystokyo.paper.event.executor.MethodHandleEventExecutor.execute(MethodHandleEventExecutor.java:40)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:81)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.players.PlayerList.placeNewPlayer(PlayerList.java:347)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.network.ServerConfigurationPacketListenerImpl.handleConfigurationFinished(ServerConfigurationPacketListenerImpl.java:153)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:22)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:13)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:55)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.TickTask.run(TickTask.java:18)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:151)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1511)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:195)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:125)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1488)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1411)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:135)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1377)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1238)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[09:31:10] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[09:31:10] [Server thread/INFO]: legoshie joined the game
+[09:31:10] [Server thread/INFO]: legoshie[/127.0.0.1:54583] logged in with entity id 23 at ([world]78.33152986690477, 64.0, 136.6490472475892)
+[09:31:12] [Server thread/WARN]: [EntityLookup] Entity uuid already exists: fde20600-de1f-40dd-8a87-14d5f63014b5, mapped to Bat['Bat'/87, uuid='fde20600-de1f-40dd-8a87-14d5f63014b5', l='ServerLevel[world]', x=64.61, y=-8.01, z=203.74, cpos=[4, 12], tl=468, v=true], can't add Bat['Bat'/105, uuid='fde20600-de1f-40dd-8a87-14d5f63014b5', l='ServerLevel[world]', x=61.82, y=-8.32, z=205.89, cpos=[3, 12], tl=518, v=false]
+[09:31:16] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2540ms or 50 ticks behind
+[09:31:21] [Server thread/WARN]: [EntityLookup] Entity uuid already exists: 22c8447e-43cd-44b8-a671-4c23c0c83ca6, mapped to EnderMan['Enderman'/191, uuid='22c8447e-43cd-44b8-a671-4c23c0c83ca6', l='ServerLevel[world]', x=189.82, y=72.00, z=199.82, cpos=[11, 12], tl=176666, v=true], can't add EnderMan['Enderman'/199, uuid='22c8447e-43cd-44b8-a671-4c23c0c83ca6', l='ServerLevel[world]', x=193.28, y=71.00, z=203.28, cpos=[12, 12], tl=176706, v=false]
+[09:31:22] [Server thread/WARN]: [EntityLookup] Entity uuid already exists: d49c26e1-5bb7-43ff-b3f4-e3965ee524b5, mapped to EnderMan['Enderman'/206, uuid='d49c26e1-5bb7-43ff-b3f4-e3965ee524b5', l='ServerLevel[world]', x=190.18, y=69.00, z=215.49, cpos=[11, 13], tl=128565, v=true], can't add EnderMan['Enderman'/210, uuid='d49c26e1-5bb7-43ff-b3f4-e3965ee524b5', l='ServerLevel[world]', x=194.86, y=68.00, z=216.83, cpos=[12, 13], tl=128612, v=false]
+[09:31:33] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2552ms or 51 ticks behind
+[09:32:36] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[09:32:36] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[09:32:36] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[09:32:36] [Server thread/INFO]: Using 4 threads for Netty based IO
+[09:32:37] [Server thread/INFO]: [testPlugin] Disabling testPlugin v1.0-SNAPSHOT
+[09:32:37] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.3+6788-6359df8
+[09:32:37] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[09:32:37] [Server thread/INFO]: Loaded 1175 recipes
+[09:32:38] [Server thread/INFO]: Loaded 1276 advancements
+[09:32:39] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar'...
+[09:32:40] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar' in 1263ms.
+[09:32:40] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.3+6788-6359df8
+[09:32:43] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@6eb2cb82]
+[09:32:43] [Server thread/INFO]: [testPlugin] Loading server plugin testPlugin v1.0-SNAPSHOT
+[09:32:43] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[09:32:43] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.3+6788-6359df8
+[09:32:44] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[09:32:44] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[09:32:44] [Server thread/WARN]: [WorldEdit] Server reload detected. This may cause various issues with WorldEdit and dependent plugins.
+[09:32:44] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R4.PaperweightAdapter as the Bukkit adapter
+[09:32:47] [Server thread/INFO]: [testPlugin] Enabling testPlugin v1.0-SNAPSHOT
+[09:32:47] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Commands' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:32:47] [Server thread/INFO]: [testPlugin] [ACF] Enabled Asynchronous Tab Completion Support!
+[09:32:47] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:32:47] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:32:47] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:32:47] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:32:47] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:32:47] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:32:47] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminigamepreset' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:32:47] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef addplayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:32:47] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:32:47] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminilobby' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:32:47] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createsnowlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:32:47] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createdeathlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:32:47] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef start' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:32:47] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef shovel' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:32:48] [Server thread/INFO]: CONSOLE: Reload complete.
+[09:32:48] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 11277ms or 225 ticks behind
+[09:32:48] [Server thread/INFO]: Timings Reset
+[09:32:48] [Server thread/INFO]: A bola de neve atingiu DIRT
+[09:32:49] [Server thread/INFO]: [testPlugin] [ACF] Can't read players locale, you will be unable to automatically detect players language. Only Bukkit 1.7+ is supported for this.
+[09:32:49] [Server thread/INFO]: [testPlugin] [ACF] java.lang.NoSuchFieldException: locale
+[09:32:49] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+[09:32:49] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.reflectionrewriter.runtime.AbstractDefaultRulesReflectionProxy.getDeclaredField(AbstractDefaultRulesReflectionProxy.java:90)
+[09:32:49] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.pluginremap.reflect.PaperReflectionHolder.getDeclaredField(Unknown Source)
+[09:32:49] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.readPlayerLocale(BukkitCommandManager.java:317)
+[09:32:49] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+[09:32:49] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1116)
+[09:32:49] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.lambda$new$1(BukkitCommandManager.java:131)
+[09:32:49] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[09:32:49] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[09:32:49] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1699)
+[09:32:49] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:467)
+[09:32:49] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1571)
+[09:32:49] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1231)
+[09:32:49] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[09:32:49] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[09:32:49] [Server thread/INFO]: A bola de neve atingiu SNOW_BLOCK
+[09:38:44] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[09:38:44] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[09:38:44] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[09:38:44] [Server thread/INFO]: Using 4 threads for Netty based IO
+[09:38:44] [Server thread/INFO]: [testPlugin] Disabling testPlugin v1.0-SNAPSHOT
+[09:38:44] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.3+6788-6359df8
+[09:38:44] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[09:38:45] [Server thread/INFO]: Loaded 1175 recipes
+[09:38:46] [Server thread/INFO]: Loaded 1276 advancements
+[09:38:46] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar'...
+[09:38:47] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar' in 500ms.
+[09:38:47] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.3+6788-6359df8
+[09:38:50] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@644cf9e2]
+[09:38:50] [Server thread/INFO]: [testPlugin] Loading server plugin testPlugin v1.0-SNAPSHOT
+[09:38:50] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[09:38:50] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.3+6788-6359df8
+[09:38:50] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[09:38:50] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[09:38:50] [Server thread/WARN]: [WorldEdit] Server reload detected. This may cause various issues with WorldEdit and dependent plugins.
+[09:38:51] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R4.PaperweightAdapter as the Bukkit adapter
+[09:38:53] [Server thread/INFO]: [testPlugin] Enabling testPlugin v1.0-SNAPSHOT
+[09:38:53] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Commands' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:38:53] [Server thread/INFO]: [testPlugin] [ACF] Enabled Asynchronous Tab Completion Support!
+[09:38:53] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:38:53] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:38:53] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:38:53] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:38:53] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:38:53] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:38:53] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminigamepreset' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:38:53] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef addplayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:38:53] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:38:53] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminilobby' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:38:53] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createsnowlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:38:53] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createdeathlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:38:53] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef start' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:38:53] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef shovel' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:38:53] [Server thread/INFO]: CONSOLE: Reload complete.
+[09:38:53] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 9205ms or 184 ticks behind
+[09:38:53] [Server thread/INFO]: Timings Reset
+[09:38:55] [Server thread/INFO]: [testPlugin] [ACF] Can't read players locale, you will be unable to automatically detect players language. Only Bukkit 1.7+ is supported for this.
+[09:38:55] [Server thread/INFO]: [testPlugin] [ACF] java.lang.NoSuchFieldException: locale
+[09:38:55] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+[09:38:55] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.reflectionrewriter.runtime.AbstractDefaultRulesReflectionProxy.getDeclaredField(AbstractDefaultRulesReflectionProxy.java:90)
+[09:38:55] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.pluginremap.reflect.PaperReflectionHolder.getDeclaredField(Unknown Source)
+[09:38:55] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.readPlayerLocale(BukkitCommandManager.java:317)
+[09:38:55] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+[09:38:55] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1116)
+[09:38:55] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.lambda$new$1(BukkitCommandManager.java:131)
+[09:38:55] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[09:38:55] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[09:38:55] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1699)
+[09:38:55] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:467)
+[09:38:55] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1571)
+[09:38:55] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1231)
+[09:38:55] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[09:38:55] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[09:38:57] [Server thread/INFO]: A bola de neve atingiu SNOW_BLOCK
+[09:39:00] [Server thread/INFO]: A bola de neve atingiu SNOW_BLOCK
+[09:40:07] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[09:40:07] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[09:40:07] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[09:40:07] [Server thread/INFO]: Using 4 threads for Netty based IO
+[09:40:07] [Server thread/INFO]: [testPlugin] Disabling testPlugin v1.0-SNAPSHOT
+[09:40:07] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.3+6788-6359df8
+[09:40:07] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[09:40:08] [Server thread/INFO]: Loaded 1175 recipes
+[09:40:08] [Server thread/INFO]: Loaded 1276 advancements
+[09:40:09] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar'...
+[09:40:09] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar' in 297ms.
+[09:40:09] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.3+6788-6359df8
+[09:40:11] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@7fecd4a]
+[09:40:11] [Server thread/INFO]: [testPlugin] Loading server plugin testPlugin v1.0-SNAPSHOT
+[09:40:11] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[09:40:11] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.3+6788-6359df8
+[09:40:11] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[09:40:12] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[09:40:12] [Server thread/WARN]: [WorldEdit] Server reload detected. This may cause various issues with WorldEdit and dependent plugins.
+[09:40:12] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R4.PaperweightAdapter as the Bukkit adapter
+[09:40:14] [Server thread/INFO]: [testPlugin] Enabling testPlugin v1.0-SNAPSHOT
+[09:40:14] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Commands' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:40:14] [Server thread/INFO]: [testPlugin] [ACF] Enabled Asynchronous Tab Completion Support!
+[09:40:15] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:40:15] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:40:15] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:40:15] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:40:15] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:40:15] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:40:15] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminigamepreset' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:40:15] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef addplayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:40:15] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:40:15] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminilobby' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:40:15] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createsnowlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:40:15] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createdeathlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:40:15] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef start' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:40:15] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef shovel' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[09:40:15] [Server thread/INFO]: CONSOLE: Reload complete.
+[09:40:15] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 8136ms or 162 ticks behind
+[09:40:15] [Server thread/INFO]: Timings Reset
+[09:40:16] [Server thread/INFO]: [testPlugin] [ACF] Can't read players locale, you will be unable to automatically detect players language. Only Bukkit 1.7+ is supported for this.
+[09:40:16] [Server thread/INFO]: [testPlugin] [ACF] java.lang.NoSuchFieldException: locale
+[09:40:16] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+[09:40:16] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.reflectionrewriter.runtime.AbstractDefaultRulesReflectionProxy.getDeclaredField(AbstractDefaultRulesReflectionProxy.java:90)
+[09:40:16] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.pluginremap.reflect.PaperReflectionHolder.getDeclaredField(Unknown Source)
+[09:40:16] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.readPlayerLocale(BukkitCommandManager.java:317)
+[09:40:16] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+[09:40:16] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1116)
+[09:40:16] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.lambda$new$1(BukkitCommandManager.java:131)
+[09:40:16] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[09:40:16] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[09:40:16] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1699)
+[09:40:16] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:467)
+[09:40:16] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1571)
+[09:40:16] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1231)
+[09:40:16] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[09:40:16] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[10:33:54] [Server thread/INFO]: legoshie issued server command: /give @p diamond_pickaxe 1 unbreakable
+[10:33:58] [Server thread/INFO]: legoshie issued server command: /give @p diamond_pickaxe 1
+[10:33:58] [Server thread/INFO]: [legoshie: Gave 1 [Diamond Pickaxe] to legoshie]
+[10:35:01] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[10:35:01] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[10:35:01] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[10:35:01] [Server thread/INFO]: Using 4 threads for Netty based IO
+[10:35:02] [Server thread/INFO]: [testPlugin] Disabling testPlugin v1.0-SNAPSHOT
+[10:35:02] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.3+6788-6359df8
+[10:35:02] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[10:35:05] [Server thread/INFO]: Loaded 1175 recipes
+[10:35:05] [Server thread/INFO]: Loaded 1276 advancements
+[10:35:06] [Paper Async Command Builder Thread Pool - 4/ERROR]: Caught previously unhandled exception :
+[10:35:06] [Paper Async Command Builder Thread Pool - 4/ERROR]: Paper Async Command Builder Thread Pool - 4
 java.util.ConcurrentModificationException: null
 	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
 	at java.base/java.util.LinkedHashMap$LinkedValueIterator.next(LinkedHashMap.java:1052) ~[?:?]
@@ -225,110 +288,319 @@ java.util.ConcurrentModificationException: null
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
 	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
-[08:53:28] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar'...
-[08:53:28] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar' in 354ms.
-[08:53:29] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.3+6788-6359df8
-[08:53:31] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@3dfa3792]
-[08:53:31] [Server thread/INFO]: [testPlugin] Loading server plugin testPlugin v1.0-SNAPSHOT
-[08:53:31] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[08:53:31] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.3+6788-6359df8
-[08:53:31] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[08:53:31] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[08:53:31] [Server thread/WARN]: [WorldEdit] Server reload detected. This may cause various issues with WorldEdit and dependent plugins.
-[08:53:31] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R4.PaperweightAdapter as the Bukkit adapter
-[08:53:33] [Server thread/INFO]: [testPlugin] Enabling testPlugin v1.0-SNAPSHOT
-[08:53:33] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Commands' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:33] [Server thread/INFO]: [testPlugin] [ACF] Enabled Asynchronous Tab Completion Support!
-[08:53:33] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:33] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:33] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:33] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:33] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:33] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:33] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef addplayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:33] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:33] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminigamepreset' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:33] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef shovel' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:33] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createsnowlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:33] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef start' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:33] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminilobby' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:33] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createdeathlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:34] [Server thread/INFO]: CONSOLE: Reload complete.
-[08:53:34] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 8428ms or 168 ticks behind
-[08:53:34] [Server thread/INFO]: Timings Reset
-[08:53:35] [Server thread/INFO]: [testPlugin] [ACF] Can't read players locale, you will be unable to automatically detect players language. Only Bukkit 1.7+ is supported for this.
-[08:53:35] [Server thread/INFO]: [testPlugin] [ACF] java.lang.NoSuchFieldException: locale
-[08:53:35] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
-[08:53:35] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.reflectionrewriter.runtime.AbstractDefaultRulesReflectionProxy.getDeclaredField(AbstractDefaultRulesReflectionProxy.java:90)
-[08:53:35] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.pluginremap.reflect.PaperReflectionHolder.getDeclaredField(Unknown Source)
-[08:53:35] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.readPlayerLocale(BukkitCommandManager.java:317)
-[08:53:35] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-[08:53:35] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1116)
-[08:53:35] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.lambda$new$1(BukkitCommandManager.java:131)
-[08:53:35] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
-[08:53:35] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
-[08:53:35] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1699)
-[08:53:35] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:467)
-[08:53:35] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1571)
-[08:53:35] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1231)
-[08:53:35] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
-[08:53:35] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Thread.run(Thread.java:1583)
-[08:53:50] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[08:53:50] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[08:53:50] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[08:53:50] [Server thread/INFO]: Using 4 threads for Netty based IO
-[08:53:50] [Server thread/INFO]: [testPlugin] Disabling testPlugin v1.0-SNAPSHOT
-[08:53:50] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.3+6788-6359df8
-[08:53:50] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
-[08:53:51] [Server thread/INFO]: Loaded 1175 recipes
-[08:53:51] [Server thread/INFO]: Loaded 1276 advancements
-[08:53:52] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.3+6788-6359df8
-[08:53:54] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@746ac0b0]
-[08:53:54] [Server thread/INFO]: [testPlugin] Loading server plugin testPlugin v1.0-SNAPSHOT
-[08:53:54] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[08:53:54] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.3+6788-6359df8
-[08:53:54] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[08:53:54] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[08:53:54] [Server thread/WARN]: [WorldEdit] Server reload detected. This may cause various issues with WorldEdit and dependent plugins.
-[08:53:55] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R4.PaperweightAdapter as the Bukkit adapter
-[08:53:57] [Server thread/INFO]: [testPlugin] Enabling testPlugin v1.0-SNAPSHOT
-[08:53:58] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Commands' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:58] [Server thread/INFO]: [testPlugin] [ACF] Enabled Asynchronous Tab Completion Support!
-[08:53:58] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:58] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:58] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:58] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:58] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:58] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:58] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef addplayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:58] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:58] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminigamepreset' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:58] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef shovel' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:58] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createsnowlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:58] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef start' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:58] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminilobby' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:58] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createdeathlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
-[08:53:58] [Server thread/INFO]: CONSOLE: Reload complete.
-[08:53:58] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 8548ms or 170 ticks behind
-[08:53:58] [Server thread/INFO]: Timings Reset
-[08:54:00] [Server thread/INFO]: [testPlugin] [ACF] Can't read players locale, you will be unable to automatically detect players language. Only Bukkit 1.7+ is supported for this.
-[08:54:00] [Server thread/INFO]: [testPlugin] [ACF] java.lang.NoSuchFieldException: locale
-[08:54:00] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
-[08:54:00] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.reflectionrewriter.runtime.AbstractDefaultRulesReflectionProxy.getDeclaredField(AbstractDefaultRulesReflectionProxy.java:90)
-[08:54:00] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.pluginremap.reflect.PaperReflectionHolder.getDeclaredField(Unknown Source)
-[08:54:00] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.readPlayerLocale(BukkitCommandManager.java:317)
-[08:54:00] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-[08:54:00] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1116)
-[08:54:00] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.lambda$new$1(BukkitCommandManager.java:131)
-[08:54:00] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
-[08:54:00] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
-[08:54:00] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1699)
-[08:54:00] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:467)
-[08:54:00] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1571)
-[08:54:00] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1231)
-[08:54:00] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
-[08:54:00] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Thread.run(Thread.java:1583)
-[08:54:22] [Server thread/INFO]: legoshie issued server command: /spleef createminigamepreset 5
-[08:54:56] [Server thread/INFO]: legoshie issued server command: /spleef createminigamepreset 5
-[09:48:56] [Server thread/INFO]: Villager Villager['Villager'/165, uuid='d16a5628-bc1e-497c-be19-179b1c62ca08', l='ServerLevel[world]', x=545.98, y=64.00, z=27.30, cpos=[34, 1], tl=280779, v=true] died, message: 'Villager was slain by Zombie'
-[10:30:33] [Server thread/INFO]: Villager Villager['Nitwit'/181, uuid='09f2857c-7bc9-417e-bce3-231f6df19018', l='ServerLevel[world]', x=548.33, y=64.00, z=26.70, cpos=[34, 1], tl=167242, v=true] died, message: 'Nitwit was slain by Zombie'
+[10:35:06] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar'...
+[10:35:07] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar' in 824ms.
+[10:35:07] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.3+6788-6359df8
+[10:35:10] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@3b33f0fd]
+[10:35:10] [Server thread/INFO]: [testPlugin] Loading server plugin testPlugin v1.0-SNAPSHOT
+[10:35:10] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[10:35:10] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.3+6788-6359df8
+[10:35:10] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[10:35:11] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[10:35:11] [Server thread/WARN]: [WorldEdit] Server reload detected. This may cause various issues with WorldEdit and dependent plugins.
+[10:35:12] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R4.PaperweightAdapter as the Bukkit adapter
+[10:35:15] [Server thread/INFO]: [testPlugin] Enabling testPlugin v1.0-SNAPSHOT
+[10:35:16] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Commands' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:35:16] [Server thread/INFO]: [testPlugin] [ACF] Enabled Asynchronous Tab Completion Support!
+[10:35:16] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:35:16] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:35:16] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:35:16] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:35:16] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:35:16] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:35:16] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminigamepreset' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:35:16] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef addplayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:35:16] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:35:16] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminilobby' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:35:16] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createsnowlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:35:16] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createdeathlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:35:16] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef start' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:35:16] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef shovel' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:35:16] [Server thread/INFO]: CONSOLE: Reload complete.
+[10:35:16] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 14783ms or 295 ticks behind
+[10:35:16] [Server thread/INFO]: Timings Reset
+[10:35:16] [Server thread/INFO]: legoshie issued server command: /sple
+[10:35:18] [Server thread/INFO]: [testPlugin] [ACF] Can't read players locale, you will be unable to automatically detect players language. Only Bukkit 1.7+ is supported for this.
+[10:35:18] [Server thread/INFO]: [testPlugin] [ACF] java.lang.NoSuchFieldException: locale
+[10:35:18] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+[10:35:18] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.reflectionrewriter.runtime.AbstractDefaultRulesReflectionProxy.getDeclaredField(AbstractDefaultRulesReflectionProxy.java:90)
+[10:35:18] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.pluginremap.reflect.PaperReflectionHolder.getDeclaredField(Unknown Source)
+[10:35:18] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.readPlayerLocale(BukkitCommandManager.java:317)
+[10:35:18] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+[10:35:18] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1116)
+[10:35:18] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.lambda$new$1(BukkitCommandManager.java:131)
+[10:35:18] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[10:35:18] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[10:35:18] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1699)
+[10:35:18] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:467)
+[10:35:18] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1571)
+[10:35:18] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1231)
+[10:35:18] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[10:35:18] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[10:35:18] [Server thread/INFO]: legoshie issued server command: /spleef shovel
+[10:35:31] [Server thread/INFO]: legoshie issued server command: /gamemode creative
+[10:35:37] [Server thread/INFO]: legoshie issued server command: /gamemode survival
+[10:35:37] [Server thread/INFO]: [legoshie: Set own game mode to Survival Mode]
+[10:36:11] [Server thread/INFO]: legoshie issued server command: /give legoshie minecraft:diamond_pickaxe 1 0 {Unbreakable:1}
+[10:43:37] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[10:43:37] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[10:43:37] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[10:43:37] [Server thread/INFO]: Using 4 threads for Netty based IO
+[10:43:38] [Server thread/INFO]: [testPlugin] Disabling testPlugin v1.0-SNAPSHOT
+[10:43:38] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.3+6788-6359df8
+[10:43:38] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[10:43:38] [Server thread/INFO]: Loaded 1175 recipes
+[10:43:39] [Server thread/INFO]: Loaded 1276 advancements
+[10:43:39] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar'...
+[10:43:39] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar' in 377ms.
+[10:43:40] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.3+6788-6359df8
+[10:43:41] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@70dc4148]
+[10:43:41] [Server thread/INFO]: [testPlugin] Loading server plugin testPlugin v1.0-SNAPSHOT
+[10:43:41] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[10:43:41] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.3+6788-6359df8
+[10:43:41] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[10:43:42] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[10:43:42] [Server thread/WARN]: [WorldEdit] Server reload detected. This may cause various issues with WorldEdit and dependent plugins.
+[10:43:42] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R4.PaperweightAdapter as the Bukkit adapter
+[10:43:44] [Server thread/INFO]: [testPlugin] Enabling testPlugin v1.0-SNAPSHOT
+[10:43:44] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Commands' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:43:44] [Server thread/INFO]: [testPlugin] [ACF] Enabled Asynchronous Tab Completion Support!
+[10:43:44] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:43:44] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:43:44] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:43:44] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:43:44] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:43:44] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:43:44] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminigamepreset' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:43:44] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef addplayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:43:44] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:43:44] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminilobby' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:43:44] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createsnowlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:43:44] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createdeathlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:43:44] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef start' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:43:44] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef shovel' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:43:44] [Server thread/INFO]: CONSOLE: Reload complete.
+[10:43:44] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6996ms or 139 ticks behind
+[10:43:44] [Server thread/INFO]: Timings Reset
+[10:43:46] [Server thread/INFO]: [testPlugin] [ACF] Can't read players locale, you will be unable to automatically detect players language. Only Bukkit 1.7+ is supported for this.
+[10:43:46] [Server thread/INFO]: [testPlugin] [ACF] java.lang.NoSuchFieldException: locale
+[10:43:46] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+[10:43:46] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.reflectionrewriter.runtime.AbstractDefaultRulesReflectionProxy.getDeclaredField(AbstractDefaultRulesReflectionProxy.java:90)
+[10:43:46] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.pluginremap.reflect.PaperReflectionHolder.getDeclaredField(Unknown Source)
+[10:43:46] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.readPlayerLocale(BukkitCommandManager.java:317)
+[10:43:46] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+[10:43:46] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1116)
+[10:43:46] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.lambda$new$1(BukkitCommandManager.java:131)
+[10:43:46] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[10:43:46] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[10:43:46] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1699)
+[10:43:46] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:467)
+[10:43:46] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1571)
+[10:43:46] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1231)
+[10:43:46] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[10:43:46] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[10:43:52] [Server thread/INFO]: legoshie issued server command: /spleef shovel
+[10:47:59] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[10:47:59] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[10:47:59] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[10:47:59] [Server thread/INFO]: Using 4 threads for Netty based IO
+[10:47:59] [Server thread/INFO]: [testPlugin] Disabling testPlugin v1.0-SNAPSHOT
+[10:47:59] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.3+6788-6359df8
+[10:47:59] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[10:48:00] [Server thread/INFO]: Loaded 1175 recipes
+[10:48:00] [Server thread/INFO]: Loaded 1276 advancements
+[10:48:01] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar'...
+[10:48:01] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar' in 466ms.
+[10:48:01] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.3+6788-6359df8
+[10:48:04] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@25ba490b]
+[10:48:04] [Server thread/INFO]: [testPlugin] Loading server plugin testPlugin v1.0-SNAPSHOT
+[10:48:04] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[10:48:04] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.3+6788-6359df8
+[10:48:04] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[10:48:04] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[10:48:04] [Server thread/WARN]: [WorldEdit] Server reload detected. This may cause various issues with WorldEdit and dependent plugins.
+[10:48:04] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R4.PaperweightAdapter as the Bukkit adapter
+[10:48:06] [Server thread/INFO]: [testPlugin] Enabling testPlugin v1.0-SNAPSHOT
+[10:48:06] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Commands' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:48:06] [Server thread/INFO]: [testPlugin] [ACF] Enabled Asynchronous Tab Completion Support!
+[10:48:06] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:48:06] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:48:06] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:48:06] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:48:06] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:48:06] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:48:06] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminigamepreset' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:48:06] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef addplayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:48:06] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:48:06] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminilobby' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:48:06] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createsnowlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:48:06] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createdeathlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:48:06] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef start' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:48:06] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef shovel' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[10:48:07] [Server thread/INFO]: CONSOLE: Reload complete.
+[10:48:07] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 7887ms or 157 ticks behind
+[10:48:07] [Server thread/INFO]: Timings Reset
+[10:48:08] [Server thread/INFO]: [testPlugin] [ACF] Can't read players locale, you will be unable to automatically detect players language. Only Bukkit 1.7+ is supported for this.
+[10:48:08] [Server thread/INFO]: [testPlugin] [ACF] java.lang.NoSuchFieldException: locale
+[10:48:08] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+[10:48:08] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.reflectionrewriter.runtime.AbstractDefaultRulesReflectionProxy.getDeclaredField(AbstractDefaultRulesReflectionProxy.java:90)
+[10:48:08] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.pluginremap.reflect.PaperReflectionHolder.getDeclaredField(Unknown Source)
+[10:48:08] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.readPlayerLocale(BukkitCommandManager.java:317)
+[10:48:08] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+[10:48:08] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1116)
+[10:48:08] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.lambda$new$1(BukkitCommandManager.java:131)
+[10:48:08] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[10:48:08] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[10:48:08] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1699)
+[10:48:08] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:467)
+[10:48:08] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1571)
+[10:48:08] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1231)
+[10:48:08] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[10:48:08] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[10:48:09] [Server thread/INFO]: legoshie issued server command: /spleef shovel
+[11:11:58] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[11:11:58] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[11:11:58] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[11:11:58] [Server thread/INFO]: Using 4 threads for Netty based IO
+[11:11:58] [Server thread/INFO]: [testPlugin] Disabling testPlugin v1.0-SNAPSHOT
+[11:11:58] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.3+6788-6359df8
+[11:11:58] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[11:11:59] [Server thread/INFO]: Loaded 1175 recipes
+[11:11:59] [Server thread/INFO]: Loaded 1276 advancements
+[11:11:59] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar'...
+[11:12:00] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\TestPlugin-1.0-SNAPSHOT.jar' in 282ms.
+[11:12:00] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.3+6788-6359df8
+[11:12:02] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@6a4dba42]
+[11:12:02] [Server thread/INFO]: [testPlugin] Loading server plugin testPlugin v1.0-SNAPSHOT
+[11:12:02] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[11:12:02] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.3+6788-6359df8
+[11:12:02] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[11:12:02] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[11:12:02] [Server thread/WARN]: [WorldEdit] Server reload detected. This may cause various issues with WorldEdit and dependent plugins.
+[11:12:02] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R4.PaperweightAdapter as the Bukkit adapter
+[11:12:04] [Server thread/INFO]: [testPlugin] Enabling testPlugin v1.0-SNAPSHOT
+[11:12:04] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Commands' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:12:04] [Server thread/INFO]: [testPlugin] [ACF] Enabled Asynchronous Tab Completion Support!
+[11:12:04] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:12:04] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:12:04] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:12:04] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:12:04] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:12:04] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:12:04] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminigamepreset' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:12:04] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef addplayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:12:04] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:12:04] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminilobby' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:12:04] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createsnowlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:12:04] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createdeathlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:12:04] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef start' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:12:04] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef shovel' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:12:04] [Server thread/INFO]: CONSOLE: Reload complete.
+[11:12:04] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6508ms or 130 ticks behind
+[11:12:04] [Server thread/INFO]: Timings Reset
+[11:12:06] [Server thread/INFO]: [testPlugin] [ACF] Can't read players locale, you will be unable to automatically detect players language. Only Bukkit 1.7+ is supported for this.
+[11:12:06] [Server thread/INFO]: [testPlugin] [ACF] java.lang.NoSuchFieldException: locale
+[11:12:06] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+[11:12:06] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.reflectionrewriter.runtime.AbstractDefaultRulesReflectionProxy.getDeclaredField(AbstractDefaultRulesReflectionProxy.java:90)
+[11:12:06] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.pluginremap.reflect.PaperReflectionHolder.getDeclaredField(Unknown Source)
+[11:12:06] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.readPlayerLocale(BukkitCommandManager.java:317)
+[11:12:06] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+[11:12:06] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1116)
+[11:12:06] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.lambda$new$1(BukkitCommandManager.java:131)
+[11:12:06] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[11:12:06] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[11:12:06] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1699)
+[11:12:06] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:467)
+[11:12:06] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1571)
+[11:12:06] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1231)
+[11:12:06] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[11:12:06] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[11:37:12] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[11:37:12] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[11:37:12] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[11:37:12] [Server thread/INFO]: Using 4 threads for Netty based IO
+[11:37:12] [Server thread/INFO]: [testPlugin] Disabling testPlugin v1.0-SNAPSHOT
+[11:37:12] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.3+6788-6359df8
+[11:37:12] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[11:37:13] [Server thread/INFO]: Loaded 1175 recipes
+[11:37:13] [Server thread/INFO]: Loaded 1276 advancements
+[11:37:13] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.3+6788-6359df8
+[11:37:15] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@6d44d200]
+[11:37:15] [Server thread/INFO]: [testPlugin] Loading server plugin testPlugin v1.0-SNAPSHOT
+[11:37:15] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[11:37:15] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.3+6788-6359df8
+[11:37:15] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[11:37:15] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[11:37:15] [Server thread/WARN]: [WorldEdit] Server reload detected. This may cause various issues with WorldEdit and dependent plugins.
+[11:37:16] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R4.PaperweightAdapter as the Bukkit adapter
+[11:37:17] [Server thread/INFO]: [testPlugin] Enabling testPlugin v1.0-SNAPSHOT
+[11:37:18] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Commands' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:37:18] [Server thread/INFO]: [testPlugin] [ACF] Enabled Asynchronous Tab Completion Support!
+[11:37:18] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:37:18] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:37:18] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: curar help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:37:18] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:37:18] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:37:18] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spawnenforcerzombie help' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:37:18] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminigamepreset' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:37:18] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef addplayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:37:18] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:37:18] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createminilobby' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:37:18] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createsnowlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:37:18] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef createdeathlayer' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:37:18] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef start' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:37:18] [Server thread/WARN]: Plugin 'testPlugin' is creating timing 'Command: spleef shovel' - this is deprecated behavior, please report it to the authors: Vitor Navarro
+[11:37:18] [Server thread/INFO]: CONSOLE: Reload complete.
+[11:37:18] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5892ms or 117 ticks behind
+[11:37:18] [Server thread/INFO]: Timings Reset
+[11:37:19] [Server thread/INFO]: [testPlugin] [ACF] Can't read players locale, you will be unable to automatically detect players language. Only Bukkit 1.7+ is supported for this.
+[11:37:19] [Server thread/INFO]: [testPlugin] [ACF] java.lang.NoSuchFieldException: locale
+[11:37:19] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Class.getDeclaredField(Class.java:2782)
+[11:37:19] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.reflectionrewriter.runtime.AbstractDefaultRulesReflectionProxy.getDeclaredField(AbstractDefaultRulesReflectionProxy.java:90)
+[11:37:19] [Server thread/INFO]: [testPlugin] [ACF] 	at io.papermc.paper.pluginremap.reflect.PaperReflectionHolder.getDeclaredField(Unknown Source)
+[11:37:19] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.readPlayerLocale(BukkitCommandManager.java:317)
+[11:37:19] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+[11:37:19] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1116)
+[11:37:19] [Server thread/INFO]: [testPlugin] [ACF] 	at TestPlugin-1.0-SNAPSHOT.jar//co.aikar.commands.BukkitCommandManager.lambda$new$1(BukkitCommandManager.java:131)
+[11:37:19] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[11:37:19] [Server thread/INFO]: [testPlugin] [ACF] 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[11:37:19] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1699)
+[11:37:19] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:467)
+[11:37:19] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1571)
+[11:37:19] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1231)
+[11:37:19] [Server thread/INFO]: [testPlugin] [ACF] 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[11:37:19] [Server thread/INFO]: [testPlugin] [ACF] 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[11:37:40] [Server thread/INFO]: legoshie issued server command: /gamemode creative
+[11:37:40] [Server thread/INFO]: [legoshie: Set own game mode to Creative Mode]
+[11:37:56] [Server thread/INFO]: legoshie issued server command: /gamemode survival
+[11:37:56] [Server thread/INFO]: [legoshie: Set own game mode to Survival Mode]
+[11:39:17] [Server thread/INFO]: Stopping server
+[11:39:17] [Server thread/INFO]: [testPlugin] Disabling testPlugin v1.0-SNAPSHOT
+[11:39:17] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.3+6788-6359df8
+[11:39:17] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[11:39:17] [Server thread/INFO]: Saving players
+[11:39:17] [Server thread/INFO]: legoshie lost connection: Server closed
+[11:39:18] [Server thread/INFO]: legoshie left the game
+[11:39:18] [Server thread/INFO]: Saving worlds
+[11:39:18] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[11:39:18] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[11:39:18] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[11:39:18] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[11:39:18] [Server thread/INFO]: [ChunkHolderManager] Saved 8 block chunks, 166 entity chunks, 0 poi chunks in world 'world' in 0,15s
+[11:39:18] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[11:39:18] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[11:39:18] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[11:39:18] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[11:39:18] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[11:39:18] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 1 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
+[11:39:18] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[11:39:18] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[11:39:18] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[11:39:18] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[11:39:18] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[11:39:18] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0,01s
+[11:39:18] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[11:39:18] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[11:39:18] [Server thread/INFO]: Flushing Chunk IO
+[11:39:18] [Server thread/INFO]: Closing Thread Pool
+[11:39:18] [Server thread/INFO]: Closing Server

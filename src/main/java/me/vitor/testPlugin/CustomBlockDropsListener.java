@@ -8,12 +8,12 @@ import org.bukkit.event.block.BlockBreakEvent;
 public class CustomBlockDropsListener implements Listener {
     private final CustomBlockDrops customBlock;
 
-    public CustomBlockDropsListener(CustomBlockDrops customBlock){
+    public CustomBlockDropsListener(CustomBlockDrops customBlock) {
         this.customBlock = customBlock;
     }
 
     @EventHandler
-    public void onBlockBreak(BlockBreakEvent event){
+    public void onBlockBreak(BlockBreakEvent event) {
         customBlock.modifyDrops(event);
     }
 }

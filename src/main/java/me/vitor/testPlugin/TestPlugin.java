@@ -13,7 +13,7 @@ import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class TestPlugin extends JavaPlugin implements Listener{
+public final class TestPlugin extends JavaPlugin implements Listener {
 
     public Material item;
 
@@ -23,15 +23,13 @@ public final class TestPlugin extends JavaPlugin implements Listener{
 
         item = getMaterialFromString(getConfig().getString("item"));
 
-        getServer().getPluginManager().registerEvents(this, this);
-
-        //TODO diminuir a probabilidade de dropar bola de neve 25% de chance (se muito diminuir para 10)
-        CustomBlockDrops customBlock = new CustomBlockDrops(Material.SNOW_BLOCK, new ItemStack(Material.SNOWBALL), 1, 0.25);
+        CustomBlockDrops customBlock = new CustomBlockDrops(Material.SNOW_BLOCK, new ItemStack(Material.SNOWBALL));
+        customBlock.setDropAmount(1);
+        customBlock.setDropChance(0.25);
         CustomBlockDropsListener customBlockListener = new CustomBlockDropsListener(customBlock);
 
         getServer().getPluginManager().registerEvents(customBlockListener, this);
         getServer().getPluginManager().registerEvents(new SnowballHitListener(), this);
-
 
         var manager = new PaperCommandManager(this);
         manager.enableUnstableAPI("help");
@@ -55,18 +53,18 @@ public final class TestPlugin extends JavaPlugin implements Listener{
             pig.getWorld().createExplosion(pig.getLocation(), 4.0f, false, false);
         }
 
-        if (entity instanceof Zombie && entity.hasMetadata("EnforcerZombie") && player.getInventory().getItemInMainHand().getType() == item){
+        if (entity instanceof Zombie && entity.hasMetadata("EnforcerZombie") && player.getInventory().getItemInMainHand().getType() == item) {
             Zombie zumbi = (Zombie) event.getRightClicked();
 
             zumbi.getWorld().createExplosion(zumbi.getLocation(), 2.5F);
         }
     }
 
-    public static TestPlugin getInstance(){
+    public static TestPlugin getInstance() {
         return getPlugin(TestPlugin.class);
     }
 
-    public static Material getMaterialFromString(String string){
+    public static Material getMaterialFromString(String string) {
         return Material.getMaterial(string);
     }
 

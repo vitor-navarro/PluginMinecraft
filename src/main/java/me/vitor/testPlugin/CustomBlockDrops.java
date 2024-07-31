@@ -5,32 +5,49 @@ import org.bukkit.block.Block;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
 
+import lombok.Setter;
+import lombok.Getter;
+
 public class CustomBlockDrops {
+
+    /*
+    blockType = Material, example Material.SNOW_BLOCK
+    ItemStack = org.bukkit.inventory.ItemStack, example new ItemStack(Material.SNOWBALL)
+    dropAmount = int Quantity of items dropped, default 1, example 1
+    dropChance = double probability of dropping the item, default 1, example: 0.125, 0.25, 0.50
+     */
+
     private final Material blockType;
-    private final ItemStack dropItem;
-    private final int dropAmount;
-    private final double dropChance;
+    private final ItemStack itemStack;
+    @Getter @Setter
+    private int dropAmount;
+    @Getter @Setter
+    private double dropChance; //example: 0.125, 0.25, 0.50
 
-    public CustomBlockDrops(Material blockType, ItemStack dropItem, int dropAmount,double dropChance){
-
+    public CustomBlockDrops(Material blockType, ItemStack itemStack) {
         this.blockType = blockType;
-        this.dropItem = dropItem;
-        this.dropAmount = dropAmount;
-        this.dropChance = dropChance;
-
+        this.itemStack = itemStack;
     }
 
     public void modifyDrops(BlockBreakEvent event) {
         Block block = event.getBlock();
         if (block.getType() == blockType) {
             event.setDropItems(false); // Impede os drops padrão
-            ItemStack item = new ItemStack(dropItem.getType(), dropAmount);
+
+            int drop = shouldDropItem() ? dropAmount : 0;
+            ItemStack item = new ItemStack(itemStack.getType(), drop);
             event.getPlayer().getInventory().addItem(item); // Dá o item ao jogador
         }
     }
 
     public Material getBlockType() {
         return blockType;
+    }
+
+    private boolean shouldDropItem() {
+        double randomNumber = Math.random();
+
+        return randomNumber < dropChance;
     }
 
 
